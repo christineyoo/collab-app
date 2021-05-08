@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
 import HomeNav from '../../Organisms/Nav/HomeNav.js';
@@ -17,7 +17,9 @@ class Landing extends Component {
               increase its efficacy by enabling intra- and inter-collaboration
               amongst teams.
             </h2>
-            <button>Explore Collab</button>
+            <button>
+              <NavLink to='dashboard'>Explore Collab</NavLink>
+            </button>
           </header>
 
           <section>
@@ -62,8 +64,7 @@ class Landing extends Component {
           </section>
         </main>
         <Footer />
-        </>
-      
+      </>
     );
   }
 }

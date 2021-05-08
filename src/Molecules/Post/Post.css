@@ -1,0 +1,21 @@
+section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  .post {
+    border: 1px solid #000;
+    margin: 5%;
+    padding: 5%;
+    background-color: #fff;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 1.25rem;
+  }

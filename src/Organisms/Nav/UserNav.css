@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    text-align: left;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-3 {
+    flex: 3;
+}
