@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import { NavLink } from 'react-router-dom';
+import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
 
 class Landing extends Component {
@@ -59,8 +60,9 @@ class Landing extends Component {
             </p>
           </section>
         </main>
-        <footer>Footer</footer>
-      </>
+        <Footer />
+        </>
+      
     );
   }
 }
