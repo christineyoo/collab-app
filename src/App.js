@@ -1,14 +1,16 @@
-import './App.css';
-import Landing from './pages/Landing/Landing';
 import React, { Component } from 'react';
-// import { Route, Link } from 'react-router-dom';
+import './App.css';
+import Landing from './Pages/Landing/Landing';
+import { Route, Link } from 'react-router-dom';
+import SignUp from './Pages/SignUp/SignUp';
 
 class App extends Component {
   render() {
     return (
       <main className='App'>
         <header>
-          <Landing />
+          <Route exact path='/' component ={Landing} />
+          <Route exact path='/signup' component = {SignUp} />
         </header>
       </main>
     );
