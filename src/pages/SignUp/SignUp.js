@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import { NavLink } from 'react-router-dom';
+import HomeNav from '../../Organisms/Nav/HomeNav.js';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './SignUp.css';
 
@@ -7,7 +8,7 @@ class SignUp extends Component {
   render() {
     return (
       <>
-        <nav>Collab | Sign Up | Demo </nav>
+        <HomeNav />
         <main>
           <header>
             <h1>Let's Collab.</h1>

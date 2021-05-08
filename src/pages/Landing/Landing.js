@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 // import { NavLink } from 'react-router-dom';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
+import HomeNav from '../../Organisms/Nav/HomeNav.js';
 
 class Landing extends Component {
   render() {
     return (
       <>
-        <nav>Collab | Sign Up | Demo </nav>
+        <HomeNav />
         <main>
           <header>
             <h1>Collaborate better.</h1>
