@@ -1,17 +1,17 @@
 section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
-  }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
-  
-  .post {
-    border: 1px solid #000;
-    margin: 5%;
-    padding: 5%;
-    background-color: #fff;
-    text-align: left;
-  }
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #dbe4f1;
+}
+
+section:nth-child(even) {
+  background-color: #cdd9eb;
+}
+
+.post {
+  border: 1px solid #000;
+  margin: 5%;
+  padding: 5%;
+  background-color: #ffffff;
+  text-align: left;
+}

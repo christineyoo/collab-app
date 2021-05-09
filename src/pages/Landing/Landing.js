@@ -51,16 +51,30 @@ class Landing extends Component {
           </section>
           <section>
             <h3>Features of Collab</h3>
-            <h4>Simple interface</h4>
-            <p>
-              This is some text about how can see all the announcements from the
-              department in one place.
-            </p>
-            <h4>Team view</h4>
-            <p>
-              This is some text about how can view the most recent changes to
-              curriculum in other courses for vertical alignment purposes.
-            </p>
+            <div className='flex'>
+              <div className='flex-1'>
+                <h4>Simple interface</h4>
+                <p>
+                  This is some text about how can see all the announcements from
+                  the department in one place.
+                </p>
+              </div>
+              <div className='flex-1 img'>Image</div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div className='flex'>
+              <div className='flex-1 img'>Image</div>
+              <div className='flex-1'>
+                <h4>Team view</h4>
+                <p>
+                  This is some text about how can view the most recent changes
+                  to curriculum in other courses for vertical alignment
+                  purposes.
+                </p>
+              </div>
+            </div>
           </section>
         </main>
         <Footer />

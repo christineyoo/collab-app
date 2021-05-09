@@ -16,7 +16,7 @@ class Footer extends Component {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  &nbsp;<strong> LinkedIn</strong>
+                  &nbsp;LinkedIn
                 </a>
               </li>
               <li>
@@ -26,7 +26,7 @@ class Footer extends Component {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  &nbsp;<strong> GitHub</strong>
+                  &nbsp;GitHub
                 </a>
               </li>
             </ul>

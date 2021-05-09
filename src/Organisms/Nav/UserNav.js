@@ -7,16 +7,49 @@ class UserNav extends Component {
     return (
       <>
         <nav>
-          <NavLink to='/' className='flex-3'>
+          <NavLink
+            exact
+            to='/'
+            activeStyle={{
+              fontStyle: 'bold',
+              color: '#333333',
+              fontWeight: '800'
+            }}
+            className='flex-3'
+          >
             Collab
           </NavLink>
-          <NavLink to='/dashboard' className='flex-1'>
+          <NavLink
+            to='/dashboard'
+            activeStyle={{
+              fontStyle: 'bold',
+              color: '#333333',
+              fontWeight: '800'
+            }}
+            className='flex-1'
+          >
             Dashboard
           </NavLink>
-          <NavLink to='/all-posts' className='flex-1'>
+          <NavLink
+            to='/all-posts'
+            activeStyle={{
+              fontStyle: 'bold',
+              color: '#333333',
+              fontWeight: '800'
+            }}
+            className='flex-1'
+          >
             All Posts
           </NavLink>
-          <NavLink to='/add-post' className='flex-1'>
+          <NavLink
+            to='/add-post'
+            activeStyle={{
+              fontStyle: 'bold',
+              color: '#333333',
+              fontWeight: '800'
+            }}
+            className='flex-1'
+          >
             Add Post
           </NavLink>
         </nav>
