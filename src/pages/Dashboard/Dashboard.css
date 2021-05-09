@@ -1,7 +1,19 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  header {
-    padding: 12% 0;
-  }
+button {
+  margin: 4rem 4rem 0 4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 4;
+}
+
+header {
+  padding: 12% 0;
+}

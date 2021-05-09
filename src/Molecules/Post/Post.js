@@ -7,11 +7,11 @@ class Post extends Component {
       <>
         <section>
           <div className='post'>
-            <h1>{this.props.title}</h1>
-            <p>Team: {this.props.group}</p>
+            <h1>{this.props.name}</h1>
+            <p>Team: {this.props.groupId}</p>
             <p>{this.props.content}</p>
             <p>
-              Posted by {this.props.author} on {this.props.date}
+              Posted by {this.props.author} on {this.props.modified.substring(0, 10)}
             </p>
           </div>
         </section>

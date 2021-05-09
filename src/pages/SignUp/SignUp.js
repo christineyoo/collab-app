@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { NavLink } from 'react-router-dom';
 import HomeNav from '../../Organisms/Nav/HomeNav.js';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './SignUp.css';
@@ -13,21 +12,19 @@ class SignUp extends Component {
           <header>
             <h1>Let's Collab.</h1>
             <form>
-              <label for='first-name'>First Name</label>
+              <label htmlFor='first-name'>First Name</label>&nbsp;
               <input id='first-name' type='text' name='first-name' required />
               <br />
-              <label for='last-name'>Last Name</label>
+              <label htmlFor='last-name'>Last Name</label>&nbsp;
               <input id='last-name' type='text' name='last-name' required />
               <br />
-              <label for='username'>Username</label>
+              <label htmlFor='username'>Username</label>&nbsp;
               <input id='username' type='text' name='username' required />
               <br />
-              <label for='password'>Password</label>
-              <input id='password' type='text' name='password' required />
+              <label htmlFor='password'>Password</label>&nbsp;
+              <input id='password' type='password' name='password' required />
               <br />
-              <button type='submit'>
-                <strong>Submit</strong>
-              </button>
+              <button type='submit'>Submit</button>
             </form>
           </header>
         </main>
