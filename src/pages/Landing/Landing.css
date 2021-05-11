@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -10,18 +15,8 @@ body {
   line-height: 1.5;
 }
 
-.flex {
-  display: flex;
-}
-
 .flex-1 {
   flex: 1;
-}
-
-.img {
-  margin: 1rem;
-  background-color: #ffffff;
-  border: 1px solid #000;
 }
 
 nav {
@@ -36,6 +31,11 @@ header {
   padding: 12% 0;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 section {
   min-height: 200px;
   padding: 6% 0;
@@ -44,4 +44,11 @@ section {
 
 section:nth-child(even) {
   background-color: #cdd9eb;
+}
+
+@media all and (min-width: 800px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
 }

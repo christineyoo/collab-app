@@ -12,7 +12,7 @@ class Dashboard extends Component {
         <UserNav />
         <main>
           <header>
-            <h1>Your Dashboard.</h1>
+            <h1>Chris's Dashboard.</h1>
             <h2>Viewing your posts.</h2>
             <h3>Visit your teams:</h3>
             <div className='flex'>
