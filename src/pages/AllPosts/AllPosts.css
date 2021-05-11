@@ -1,11 +1,19 @@
 .flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 800px) {
+  .flex-container {
     display: flex;
-}
+    flex-direction: row;
+  }
 
-.flex-1 {
+  .flex-1 {
     flex: 1;
-}
+  }
 
-.flex-3 {
+  .flex-3 {
     flex: 3;
+  }
 }
