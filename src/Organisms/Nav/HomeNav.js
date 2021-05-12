@@ -11,18 +11,7 @@ class HomeNav extends Component {
             Collab
           </NavLink>
           <NavLink
-            to='/signup'
-            activeStyle={{
-              fontStyle: 'bold',
-              color: '#333333',
-              fontWeight: '800'
-            }}
-            className='flex-1'
-          >
-            Sign Up
-          </NavLink>
-          <NavLink
-            to='/dashboard'
+            to='/all-posts'
             activeStyle={{
               fontStyle: 'bold',
               color: '#333333',

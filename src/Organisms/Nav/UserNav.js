@@ -20,17 +20,6 @@ class UserNav extends Component {
             Collab
           </NavLink>
           <NavLink
-            to='/dashboard'
-            activeStyle={{
-              fontStyle: 'bold',
-              color: '#333333',
-              fontWeight: '800'
-            }}
-            className='flex-1'
-          >
-            Dashboard
-          </NavLink>
-          <NavLink
             to='/all-posts'
             activeStyle={{
               fontStyle: 'bold',

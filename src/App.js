@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import AllPosts from './Pages/AllPosts/AllPosts';
 import AddPost from './Pages/AddPost/AddPost';
-import Dashboard from './Pages/Dashboard/Dashboard';
 import Group from './Pages/Group/Group';
 import Landing from './Pages/Landing/Landing';
-import { Route } from 'react-router-dom';
-import SignUp from './Pages/SignUp/SignUp';
+import { Route, Switch } from 'react-router-dom';
+import NotFound from './Pages/NotFound/NotFound';
 
 class App extends Component {
   state = {
@@ -18,12 +17,14 @@ class App extends Component {
     return (
       <main className='App'>
         <header>
-          <Route exact path='/signup' component={SignUp} />
-          <Route exact path='/dashboard' component={Dashboard} />
+          <Switch>
           <Route exact path='/all-posts' component={AllPosts} />
           <Route exact path='/add-post' component={AddPost} />
           <Route path='/group/:groupId' component={Group} />
           <Route exact path='/' component={Landing} />
+          <Route component={NotFound} />
+          </Switch>
+          
         </header>
       </main>
     );

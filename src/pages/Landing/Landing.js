@@ -28,7 +28,7 @@ class Landing extends Component {
               better... and students learn better.
             </h2>
             <button>
-              <NavLink to='dashboard'>Explore Collab</NavLink>
+              <NavLink to='all-posts'>Explore Collab</NavLink>
             </button>
           </header>
 
