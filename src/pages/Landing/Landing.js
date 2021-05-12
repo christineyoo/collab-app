@@ -19,12 +19,12 @@ class Landing extends Component {
       <>
         <HomeNav />
         <main>
-          <header className="header">
+          <header className='header'>
             <h1>Collaborate better.</h1>
             <h2>
-              Collab is a social and productivity app that helps teachers
-              increase their efficacy by enabling intra- and inter-collaboration
-              amongst course teams. Because when we collaborate better, we teach
+              Collab is a productivity app that helps teachers increase their
+              efficacy by enabling intra- and inter-collaboration amongst course
+              teams. <br /> Because when we collaborate better, we teach
               better... and students learn better.
             </h2>
             <button>

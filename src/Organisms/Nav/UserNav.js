@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import './UserNav.css';
+import './Nav.css';
 
 class UserNav extends Component {
   render() {
@@ -15,7 +15,7 @@ class UserNav extends Component {
               color: '#333333',
               fontWeight: '800'
             }}
-            className='flex-3'
+            className='flex-1'
           >
             Collab
           </NavLink>

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import './HomeNav.css';
+import './Nav.css';
 
 class HomeNav extends Component {
   render() {
     return (
       <>
         <nav>
-          <NavLink exact to='/' className='flex-3'>
+          <NavLink exact to='/' className='flex-1'>
             Collab
           </NavLink>
           <NavLink
