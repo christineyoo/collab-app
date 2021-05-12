@@ -10,36 +10,37 @@
   background-color: #f8fafc;
 }
 
-h2 {
-  margin: 0 20%;
-  font-size: 1.25rem;
-}
-
-html, body {
-  overflow-x: hidden;
-}
-
 body {
-  position: relative
-}
-
-p {
-  font-size: 1rem;
+  position: relative;
 }
 
 div .flex-1 {
   margin: 0 5%;
 }
 
+h2 {
+  margin: 0 20%;
+  font-size: 1.25rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1rem;
+}
+
 /* For desktops greater than 800px */
 @media all and (min-width: 800px) {
+  div .flex {
+    margin: 0 10%;
+  }
+
   h2 {
     margin: 0 10%;
     font-size: 1.5rem;
-  }
-
-  div .flex {
-    margin: 0 10%;
   }
 
   p {
