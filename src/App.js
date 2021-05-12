@@ -19,16 +19,16 @@ class App extends Component {
     return (
       <main className='App'>
         <header>
-          <Switch>
-            <Route exact path='/signup' component={SignUp} />
-            <Route exact path='/dashboard' component={Dashboard} />
-            <Route exact path='/all-posts' component={AllPosts} />
-            <Route exact path='/add-post' component={AddPost} />
-            <Route path='/group/:groupId' component={Group} />
-            <Route exact path='/' component={Landing} />
-            <Route path='/404' component={NotFound} />
-            <Redirect to='/404' />
-          </Switch>
+          {/* <Switch> */}
+          <Route exact path='/signup' component={SignUp} />
+          <Route exact path='/dashboard' component={Dashboard} />
+          <Route exact path='/all-posts' component={AllPosts} />
+          <Route exact path='/add-post' component={AddPost} />
+          <Route path='/group/:groupId' component={Group} />
+          <Route exact path='/' component={Landing} />
+          {/* <Route path='/404' component={NotFound} />
+            <Redirect to='/404' /> */}
+          {/* </Switch> */}
         </header>
       </main>
     );
