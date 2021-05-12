@@ -22,9 +22,9 @@ class Landing extends Component {
           <header>
             <h1>Collaborate better.</h1>
             <h2>
-              Collab is a social and productivity app that helps teacher teams
+              Collab is a social and productivity app that helps teachers
               increase their efficacy by enabling intra- and inter-collaboration
-              amongst teams. Because when we collaborate better, we teach
+              amongst course teams. Because when we collaborate better, we teach
               better... and students learn better.
             </h2>
             <button>
@@ -65,8 +65,9 @@ class Landing extends Component {
               <div className='flex-1'>
                 <h4>Simple interface</h4>
                 <p>
-                  This is some text about how can see all the announcements from
-                  the department in one place.
+                  Skip the searching and scrolling. All the info you need is
+                  here. Simply click on the course you would like to view and
+                  see all the relevant updates from your colleagues.
                 </p>
               </div>
               {this.renderPicture()}
@@ -75,13 +76,13 @@ class Landing extends Component {
             <br />
             <br />
             <div className='flex'>
-            {this.renderPicture()}
+              {this.renderPicture()}
               <div className='flex-1'>
                 <h4>Team view</h4>
                 <p>
-                  This is some text about how can view the most recent changes
-                  to curriculum in other courses for vertical alignment
-                  purposes.
+                  Effectively plan your lessons for vertical alignment by
+                  clicking on other courses to see modifications and assessments
+                  for that particular course.
                 </p>
               </div>
             </div>
