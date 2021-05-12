@@ -9,7 +9,7 @@ class AddPost extends Component {
       <>
         <UserNav />
         <main className='add-post'>
-          <header>
+          <header className='header'>
             <h1>Add a new post.</h1>
             <form>
               <label for='title'>Title</label>&nbsp;

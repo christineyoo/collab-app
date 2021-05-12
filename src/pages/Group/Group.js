@@ -24,7 +24,7 @@ class Group extends Component {
       <>
         <UserNav />
         <main>
-          <header>
+          <header className='header'>
             <h1>{this.findGroupName()}</h1>
             <h2>Viewing recent posts from {this.findGroupName()}</h2>
           </header>

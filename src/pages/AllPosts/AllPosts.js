@@ -11,7 +11,7 @@ class AllPosts extends Component {
       <>
         <UserNav />
         <main>
-          <header>
+          <header className='header'>
             <h1>All Posts</h1>
             <h2>Viewing recent posts from your Collabmates.</h2>
           </header>
