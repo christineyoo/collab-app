@@ -5,6 +5,7 @@ import AddPost from './Pages/AddPost/AddPost';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Group from './Pages/Group/Group';
 import Landing from './Pages/Landing/Landing';
+import NotFound from './Pages/NotFound/NotFound';
 import { Route } from 'react-router-dom';
 import SignUp from './Pages/SignUp/SignUp';
 
@@ -24,6 +25,7 @@ class App extends Component {
           <Route exact path='/add-post' component={AddPost} />
           <Route path='/group/:groupId' component={Group} />
           <Route exact path='/' component={Landing} />
+          <Route component={NotFound} />
         </header>
       </main>
     );
