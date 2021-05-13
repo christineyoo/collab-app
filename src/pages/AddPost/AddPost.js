@@ -12,26 +12,34 @@ class AddPost extends Component {
           <header className='header'>
             <h1>Add a new post.</h1>
             <form>
-              <label for='title'>Title</label>&nbsp;
-              <input id='title' type='text' name='title' required />
+              <div className='field'>
+                <label for='title'>Title</label><br />
+                <input id='title' type='text' name='title' required />
+              </div>
+
               <br />
-              <label for='content'>Content</label>
+              <div className='field'>
+                <label for='content'>Content</label>
+                <br />
+                <textarea
+                  id='content'
+                  name='content'
+                  rows='15'
+                  cols='100'
+                ></textarea>
+              </div>
+
               <br />
-              <textarea
-                id='content'
-                name='content'
-                rows='4'
-                cols='50'
-              ></textarea>
-              <br />
-              <label for='groups'>Group</label>&nbsp;
-              <select name='group' id='group'>
-                <option value='algebra-1'>Algebra 1</option>
-                <option value='geometry'>Geometry</option>
-                <option value='algebra-2'>Algebra 2</option>
-                <option value='ids'>Intro to Data Science</option>
-                <option value='math'>Math department</option>
-              </select>
+              <div className='field'>
+                <label for='groups'>Group</label><br />
+                <select name='group' id='group'>
+                  <option value='algebra-1'>Algebra 1</option>
+                  <option value='geometry'>Geometry</option>
+                  <option value='algebra-2'>Algebra 2</option>
+                  <option value='ids'>Intro to Data Science</option>
+                  <option value='math'>Math department</option>
+                </select>
+              </div>
               <br />
               <button type='submit'>Add Post</button>
             </form>

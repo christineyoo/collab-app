@@ -20,7 +20,7 @@ class Landing extends Component {
         <HomeNav />
         <main>
           <header className='header'>
-            <h1>Collaborate better.</h1>
+            <h1 className='landing'>Collaborate better.</h1>
             <h2>
               Collab is a productivity app that helps teachers increase their
               efficacy by enabling intra- and inter-collaboration amongst course
@@ -36,6 +36,7 @@ class Landing extends Component {
             <h3>Benefits of Collab</h3>
             <div className='flex'>
               <div className='flex-1'>
+              <i class="far fa-comments fa-7x"></i>
                 <h4>Easy to use</h4>
                 <p>
                   Get updates from your department without the hassle of digging
@@ -43,6 +44,7 @@ class Landing extends Component {
                 </p>
               </div>
               <div className='flex-1'>
+              <i class="fas fa-users fa-7x"></i>
                 <h4>Stay connected</h4>
                 <p>
                   Keep tabs on your colleagues to track progress and share best
@@ -51,6 +53,7 @@ class Landing extends Component {
               </div>
 
               <div className='flex-1'>
+              <i class="fas fa-arrows-alt-v fa-7x"></i>
                 <h4>Vertical alignment</h4>
                 <p>
                   Find resources, updates in curriculum, and assessments for
