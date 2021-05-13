@@ -3,15 +3,25 @@ import { NavLink } from 'react-router-dom';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
 import HomeNav from '../../Organisms/Nav/HomeNav.js';
-import fillerPic from './monsters-university.jpg';
+import featurePicture1 from './algebra-course.png';
+import featurePicture2 from './ids-course.png';
 
 class Landing extends Component {
-  renderPicture = () => {
-    return (
+  renderPicture = (isFeaturePicture1) => {
+    if (isFeaturePicture1) {
+      return (
       <div className='flex-1'>
-        <img src={fillerPic} alt='Monsters University' class='responsive' />
+        <img src={featurePicture1} alt='Algebra 1' class='responsive' />
       </div>
     );
+    } else {
+      return (
+        <div className='flex-1'>
+        <img src={featurePicture2} alt='Intro to Data Science' class='responsive' />
+      </div>
+      )
+    }
+    
   };
 
   render() {
@@ -40,14 +50,14 @@ class Landing extends Component {
                 <h4>Easy to use</h4>
                 <p>
                   Get updates from your department without the hassle of digging
-                  through your inbox.
+                  through your inbox (no offense, email).
                 </p>
               </div>
               <div className='flex-1'>
               <i class="fas fa-users fa-7x"></i>
                 <h4>Stay connected</h4>
                 <p>
-                  Keep tabs on your colleagues to track progress and share best
+                  Keep tabs on your colleagues to track progress, updates, and share best
                   practices.
                 </p>
               </div>
@@ -73,7 +83,7 @@ class Landing extends Component {
                   see all the relevant updates from your colleagues.
                 </p>
               </div>
-              {this.renderPicture()}
+              {this.renderPicture(true)}
             </div>
             <br />
             <br />
