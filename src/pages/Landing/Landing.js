@@ -57,7 +57,7 @@ class Landing extends Component {
               <i class="fas fa-users fa-7x"></i>
                 <h4>Stay connected</h4>
                 <p>
-                  Keep tabs on your colleagues to track progress, updates, and share best
+                  Keep tabs on your colleagues to provide feedback, track progress, share best
                   practices.
                 </p>
               </div>

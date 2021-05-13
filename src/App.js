@@ -6,6 +6,7 @@ import Group from './Pages/Group/Group';
 import Landing from './Pages/Landing/Landing';
 import { Route, Switch } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
+import ScrollToTop from './ScrollToTop';
 
 class App extends Component {
   state = {
@@ -17,6 +18,7 @@ class App extends Component {
     return (
       <main className='App'>
         <header>
+          <ScrollToTop />
           <Switch>
           <Route exact path='/all-posts' component={AllPosts} />
           <Route exact path='/add-post' component={AddPost} />
