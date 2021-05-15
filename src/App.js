@@ -59,11 +59,12 @@ class App extends Component {
   };
 
   // Adds a post to the state
-  addPost = (data, postName, postContent, postAuthor) => {
+  addPost = (data, postName, postContent, postGroup, postAuthor) => {
     const newPostObject = {
       id: data.id,
       name: postName,
       content: postContent,
+      group: postGroup,
       author: postAuthor
     };
     this.setState({ posts: [...this.state.posts, newPostObject] });
