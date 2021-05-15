@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .add-post {
+    text-align: left;
+    margin: 5%;
+  }
+  
+  header {
+    padding: 7% 0 0 0;
+  }
+
+.field {
+    margin: 0 0 0.5rem 0;
+  }
+
+  input, textarea, select {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  textarea {
+    max-width: 95%;
+  }

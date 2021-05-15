@@ -9,6 +9,7 @@ import { Route, Switch } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
 import PostDetails from './Pages/PostDetails/PostDetails';
 import ScrollToTop from './ScrollToTop';
+import UpdatePost from './Pages/UpdatePost/UpdatePost';
 
 class App extends Component {
   state = {
@@ -94,6 +95,7 @@ class App extends Component {
               <Route exact path='/all-posts' component={AllPosts} />
               <Route exact path='/add-post' component={AddPost} />
               <Route path='/group/:groupId' component={Group} />
+              <Route path='/post/:postId/edit' component={UpdatePost} />
               <Route path='/post/:postId' component={PostDetails} />
               <Route exact path='/' component={Landing} />
               <Route component={NotFound} />

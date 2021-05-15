@@ -43,9 +43,7 @@ class Post extends Component {
         {(context) => (
           <section>
             <div className='post'>
-              <NavLink to={`/post/${this.props.id}`}>
-                <h1>{this.props.post_name}</h1>
-              </NavLink>
+              <h1>{this.props.post_name}</h1>
               <p>
                 Team: <FindGroupName />
               </p>
@@ -60,6 +58,9 @@ class Post extends Component {
               >
                 Delete
               </button>
+              <NavLink to={`/post/${this.props.post_id}/edit`}>
+                <button>Edit Post</button>
+              </NavLink>
               <br />
               <i className='fas fa-plus-circle'></i>&nbsp; Comment
             </div>

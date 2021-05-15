@@ -8,7 +8,7 @@ section:nth-child(even) {
   background-color: #cdd9eb;
 }
 
-.post h1:hover {
+.post-title:hover {
   color: #d3d3d3;
 }
 

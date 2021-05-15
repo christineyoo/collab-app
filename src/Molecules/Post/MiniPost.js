@@ -19,7 +19,7 @@ class MiniPost extends Component {
           <section>
             <div className='post'>
               <NavLink to={`/post/${this.props.id}`}>
-                <h1>{this.props.post_name}</h1>
+                <h1 className='post-title'>{this.props.post_name}</h1>
               </NavLink>
               <p>
                 Team: <FindGroupName />
