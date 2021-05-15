@@ -61,6 +61,7 @@ class Post extends Component {
               <Link
                 to={{
                   pathname: `/post/${this.props.post_id}/edit`,
+                  post_id: this.props.post_id,
                   post_name: this.props.post_name,
                   content: this.props.content,
                   author: this.props.author,

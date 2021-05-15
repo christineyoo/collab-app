@@ -103,15 +103,15 @@ class AddPost extends Component {
     return allGroupOptions;
   };
 
-  handleEdit = (event, addPostCb) => {
+  handleEdit = (event, postId, editPostCb) => {
     event.preventDefault();
     const { title, content, group, author } = this.state;
     const postTitle = title.value;
     const postContent = content.value;
     const postGroup = group.value;
     const postAuthor = author.value;
-    fetch('http://localhost:8000/api/posts', {
-      method: 'POST',
+    fetch(`http://localhost:8000/api/posts/${postId}`, {
+      method: 'PATCH',
       headers: {
         'content-type': 'application/json'
       },
@@ -119,8 +119,7 @@ class AddPost extends Component {
         post_name: postTitle,
         content: postContent,
         group_id: +postGroup,
-        author: postAuthor,
-        modified: '2021-05-20 23:21:26.392487+00'
+        author: postAuthor
       })
     })
       .then((res) => {
@@ -130,8 +129,8 @@ class AddPost extends Component {
         return res.json();
       })
       .then((data) => {
-        this.props.history.push('/all-posts');
-        addPostCb(data, postTitle, postContent, postGroup, postAuthor);
+        this.props.history.push(`/all-posts`);
+        editPostCb(data, postTitle, postContent, postGroup, postAuthor);
         this.context.fetchPosts();
       });
   };
@@ -169,7 +168,15 @@ class AddPost extends Component {
             <main className='add-post'>
               <header className='header'>
                 <h1>Edit post</h1>
-                <form onSubmit={(e) => this.handleEdit(e, context.addPost)}>
+                <form
+                  onSubmit={(e) =>
+                    this.handleEdit(
+                      e,
+                      this.props.location.post_id,
+                      context.addPost
+                    )
+                  }
+                >
                   <div className='field'>
                     <label htmlFor='title'>Title</label>
                     <br />
