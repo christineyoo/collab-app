@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FindGroupName from '../FindGroupName/FindGroupName';
 import './Post.css';
 
 class Post extends Component {
@@ -8,10 +9,13 @@ class Post extends Component {
         <section>
           <div className='post'>
             <h1>{this.props.post_name}</h1>
-            <p>Team: {this.props.group_id}</p>
+            <p>
+              Team: <FindGroupName />
+            </p>
             <p>{this.props.content}</p>
             <p>
-              Posted by {this.props.author} on {this.props.modified.substring(0, 10)}
+              Posted by {this.props.author} on{' '}
+              {this.props.modified.substring(0, 10)}
             </p>
           </div>
         </section>
