@@ -3,9 +3,65 @@ import './AddPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
 import UserNav from '../../Organisms/Nav/UserNav.js';
+import ValidationError from '../../ValidationError/ValidationError';
 
 class AddPost extends Component {
   static contextType = ApiContext;
+  state = {
+    postName: {
+      value: '',
+      touched: false
+    },
+    content: {
+      value: '',
+      touched: false
+    },
+    group: {
+      value: 1,
+      touched: false
+    },
+    author: {
+      value: '',
+      touched: false
+    }
+  };
+
+  // Functions to change the state
+  inputPostName = (postName) => {
+    this.setState({
+      postName: {
+        value: postName,
+        touched: true
+      }
+    });
+  };
+
+  inputContent = (content) => {
+    this.setState({
+      content: {
+        value: content,
+        touched: true
+      }
+    });
+  };
+
+  inputGroup = (group) => {
+    this.setState({
+      group: {
+        value: group,
+        touched: true
+      }
+    });
+  };
+
+  inputAuthor = (author) => {
+    this.setState({
+      author: {
+        value: author,
+        touched: true
+      }
+    });
+  };
 
   renderOptions = () => {
     const copyGroups = this.context.groups || [];
