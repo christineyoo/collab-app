@@ -136,7 +136,10 @@ class AddPost extends Component {
       });
   };
   consolelog = () => {
-    return console.log('prop', this.props.location.aboutProps);
+      console.log('prop', this.props.location.post_name);
+      console.log('prop', this.props.location.content);
+      console.log('prop', this.props.location.author);
+      console.log('prop', this.props.location.group_id);
   };
 
   render() {
