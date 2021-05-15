@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
 import './Posts.css';
-import Post from '../../Molecules/Post/Post.js';
+import MiniPost from '../../Molecules/Post/MiniPost';
 
 class Posts extends Component {
   static contextType = ApiContext;
@@ -14,7 +14,7 @@ class Posts extends Component {
         .filter((post) => post.group_id === +this.props.group_id)
         .map((post) => {
           return (
-            <Post
+            <MiniPost
               author={post.author}
               content={post.content}
               modified={post.modified}
@@ -27,7 +27,7 @@ class Posts extends Component {
     } else {
       return copyPosts.map((post) => {
         return (
-          <Post
+          <MiniPost
             author={post.author}
             content={post.content}
             modified={post.modified}

@@ -76,8 +76,6 @@ class App extends Component {
     this.fetchPosts();
   };
 
-  // Include an updates post in the state.
-
   render() {
     const contextValue = {
       groups: this.state.groups,

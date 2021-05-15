@@ -60,7 +60,6 @@ class Post extends Component {
               >
                 Delete
               </button>
-              <button>Edit Post</button>
               <br />
               <i className='fas fa-plus-circle'></i>&nbsp; Comment
             </div>
