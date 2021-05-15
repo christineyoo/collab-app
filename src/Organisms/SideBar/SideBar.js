@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
+import ApiContext from '../../ApiContext';
 import { NavLink } from 'react-router-dom';
 import './SideBar.css';
 
 class SideBar extends Component {
+  static contextType = ApiContext;
+
   // Returns the nav bar for the "/" and "/folder" routes
   displaySideBar = () => {
-    const groups = [
-      { id: 1, name: 'Algebra 1' },
-      { id: 2, name: 'Geometry' },
-      { id: 3, name: 'Algebra 2' },
-      { id: 4, name: 'Intro to Data Science' }
-    ];
+    const copyGroups = this.context.groups || [];
 
-    const sideBar = groups.map((group, i) => {
+    const sideBar = copyGroups.map((group, i) => {
       return (
         <div className='group-card' key={i}>
           <NavLink
@@ -23,7 +21,7 @@ class SideBar extends Component {
               fontWeight: '900'
             }}
           >
-            {group.name}
+            {group.group_name}
           </NavLink>
         </div>
       );

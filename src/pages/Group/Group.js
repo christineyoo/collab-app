@@ -8,15 +8,13 @@ import UserNav from '../../Organisms/Nav/UserNav.js';
 class Group extends Component {
   findGroupName = () => {
     if (+this.props.match.params.groupId === 1) {
-      return 'Algebra 1';
+      return 'Integrated Math 1';
     } else if (+this.props.match.params.groupId === 2) {
-      return 'Geometry';
+      return 'Integrated Math 2';
     } else if (+this.props.match.params.groupId === 3) {
-      return 'Algebra 2';
-    } else if (+this.props.match.params.groupId === 4) {
-      return 'Intro to Data Science';
+      return 'Integrated Math 3';
     } else {
-      return null;
+      return 'Intro to Data Science';
     }
   };
   render() {
@@ -33,7 +31,7 @@ class Group extends Component {
               <SideBar />
             </div>
             <div className='flex-3'>
-              <Posts isOnGroup groupId={this.props.match.params.groupId} />
+              <Posts isOnGroup group_id={this.props.match.params.groupId} />
             </div>
           </div>
         </main>

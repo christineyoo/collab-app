@@ -11,13 +11,13 @@ class Landing extends Component {
     if (isFeaturePicture1) {
       return (
       <div className='flex-1'>
-        <img src={featurePicture1} alt='Algebra 1' class='responsive' />
+        <img src={featurePicture1} alt='Algebra 1' className='responsive' />
       </div>
     );
     } else {
       return (
         <div className='flex-1'>
-        <img src={featurePicture2} alt='Intro to Data Science' class='responsive' />
+        <img src={featurePicture2} alt='Intro to Data Science' className='responsive' />
       </div>
       )
     }
@@ -46,7 +46,7 @@ class Landing extends Component {
             <h3>Benefits of Collab</h3>
             <div className='flex'>
               <div className='flex-1'>
-              <i class="far fa-comments fa-7x"></i>
+              <i className="far fa-comments fa-7x"></i>
                 <h4>Easy to use</h4>
                 <p>
                   Get updates from your department without the hassle of digging
@@ -54,7 +54,7 @@ class Landing extends Component {
                 </p>
               </div>
               <div className='flex-1'>
-              <i class="fas fa-users fa-7x"></i>
+              <i className="fas fa-users fa-7x"></i>
                 <h4>Stay connected</h4>
                 <p>
                   Keep tabs on your colleagues to provide feedback, track progress, share best
@@ -63,7 +63,7 @@ class Landing extends Component {
               </div>
 
               <div className='flex-1'>
-              <i class="fas fa-arrows-alt-v fa-7x"></i>
+              <i className="fas fa-arrows-alt-v fa-7x"></i>
                 <h4>Vertical alignment</h4>
                 <p>
                   Find resources, updates in curriculum, and assessments for
