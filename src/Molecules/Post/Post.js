@@ -20,6 +20,10 @@ class Post extends Component {
               Posted by {this.props.author} on{' '}
               {this.props.modified.substring(0, 10)}
             </p>
+            <button>Delete</button>
+            <button>Edit Post</button>
+            <br />
+            <i class='fas fa-plus-circle'></i>&nbsp; Comment
           </div>
         </section>
       </>
