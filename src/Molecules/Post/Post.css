@@ -8,6 +8,10 @@ section:nth-child(even) {
   background-color: #cdd9eb;
 }
 
+.post h1:hover {
+  color: #d3d3d3;
+}
+
 .post {
   border: 1px solid #000;
   margin: 5%;
