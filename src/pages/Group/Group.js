@@ -7,17 +7,6 @@ import SideBar from '../../Organisms/SideBar/SideBar.js';
 import UserNav from '../../Organisms/Nav/UserNav.js';
 
 class Group extends Component {
-  findGroupName = () => {
-    if (+this.props.match.params.groupId === 1) {
-      return 'Integrated Math 1';
-    } else if (+this.props.match.params.groupId === 2) {
-      return 'Integrated Math 2';
-    } else if (+this.props.match.params.groupId === 3) {
-      return 'Integrated Math 3';
-    } else {
-      return 'Intro to Data Science';
-    }
-  };
   render() {
     return (
       <>
@@ -27,7 +16,10 @@ class Group extends Component {
             <h1>
               <FindGroupName group_id={this.props.match.params.groupId} />
             </h1>
-            <h2>Viewing recent posts from {this.findGroupName()}</h2>
+            <h2>
+              Viewing recent posts from{' '}
+              <FindGroupName group_id={this.props.match.params.groupId} />
+            </h2>
           </header>
           <div className='flex-container'>
             <div className='flex-1'>
@@ -45,3 +37,4 @@ class Group extends Component {
 }
 
 export default Group;
+ 

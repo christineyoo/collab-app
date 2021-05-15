@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import UserNav from '../../Organisms/Nav/UserNav.js';
-import Footer from '../../Organisms/Footer/Footer.js';
 import './AddPost.css';
+import ApiContext from '../../ApiContext.js';
+import Footer from '../../Organisms/Footer/Footer.js';
+import UserNav from '../../Organisms/Nav/UserNav.js';
 
 class AddPost extends Component {
+  static contextType = ApiContext;
+
   renderNames = () => {
     const names = [
       'Alfred Cardenas',
@@ -21,9 +24,22 @@ class AddPost extends Component {
     ];
 
     return names.map((name) => {
-      return <option value={name.substring(0, 4)}>{name}</option>;
+      return <option value={name}>{name}</option>;
     });
   };
+
+  renderOptions = () => {
+    const copyGroups = this.context.groups || [];
+    const groupOptions = copyGroups.map((group) => {
+      return <option value={group.group_name}>{group.group_name}</option>;
+    });
+    const allGroupOptions = [
+      ...groupOptions,
+      <option value='Math department'>Math department</option>
+    ];
+    return allGroupOptions;
+  };
+
   render() {
     return (
       <>
@@ -55,11 +71,7 @@ class AddPost extends Component {
                 <label for='groups'>Group</label>
                 <br />
                 <select name='group' id='group'>
-                  <option value='algebra-1'>Algebra 1</option>
-                  <option value='geometry'>Geometry</option>
-                  <option value='algebra-2'>Algebra 2</option>
-                  <option value='ids'>Intro to Data Science</option>
-                  <option value='math'>Math department</option>
+                  {this.renderOptions()}
                 </select>
               </div>
               <br />
