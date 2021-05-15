@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import FindGroupName from '../FindGroupName/FindGroupName';
 import PropTypes from 'prop-types';
 import './Post.css';
@@ -58,9 +58,16 @@ class Post extends Component {
               >
                 Delete
               </button>
-              <NavLink to={`/post/${this.props.post_id}/edit`}>
+              <Link
+                to={{
+                  pathname: `/post/${this.props.post_id}/edit`,
+                  aboutProps: {
+                    name: 'Info'
+                  }
+                }}
+              >
                 <button>Edit Post</button>
-              </NavLink>
+              </Link>
               <br />
               <i className='fas fa-plus-circle'></i>&nbsp; Comment
             </div>

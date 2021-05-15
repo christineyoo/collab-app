@@ -9,7 +9,7 @@ import { Route, Switch } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
 import PostDetails from './Pages/PostDetails/PostDetails';
 import ScrollToTop from './ScrollToTop';
-import UpdatePost from './Pages/UpdatePost/UpdatePost';
+import UpdatePost from './Pages/EditPost/EditPost';
 
 class App extends Component {
   state = {

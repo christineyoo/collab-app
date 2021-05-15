@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './UpdatePost.css';
+import './EditPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
 import PropTypes from 'prop-types';
@@ -8,7 +8,8 @@ import ValidationError from '../../ValidationError/ValidationError';
 
 class AddPost extends Component {
   static propTypes = {
-    history: PropTypes.object
+    history: PropTypes.object,
+    location: PropTypes.object
   };
 
   static contextType = ApiContext;
@@ -134,6 +135,9 @@ class AddPost extends Component {
         this.context.fetchPosts();
       });
   };
+  consolelog = () => {
+    return console.log('prop', this.props.location.aboutProps);
+  };
 
   render() {
     return (
@@ -141,6 +145,7 @@ class AddPost extends Component {
         {(context) => (
           <div>
             <UserNav />
+            {this.consolelog()}
             <main className='add-post'>
               <header className='header'>
                 <h1>Edit post</h1>
