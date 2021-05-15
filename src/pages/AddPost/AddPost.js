@@ -117,7 +117,7 @@ class AddPost extends Component {
       body: JSON.stringify({
         post_name: postTitle,
         content: postContent,
-        group_id: postGroup,
+        group_id: +postGroup,
         author: postAuthor,
         modified: '2021-05-20 23:21:26.392487+00'
       })
@@ -129,7 +129,7 @@ class AddPost extends Component {
         return res.json();
       })
       .then((data) => {
-        this.props.history.push('/');
+        this.props.history.push('/all-posts');
         addPostCb(data, postTitle, postContent, postGroup, postAuthor);
         this.context.fetchPosts();
       });

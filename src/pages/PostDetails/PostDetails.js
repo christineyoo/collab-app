@@ -18,6 +18,7 @@ class PostDetails extends Component {
         <ApiContext.Consumer key={i}>
           {(context) => (
             <Post
+              post_id={this.props.match.params.postId}
               post_name={post.post_name}
               content={post.content}
               modified={post.modified}

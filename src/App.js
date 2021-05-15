@@ -29,7 +29,6 @@ class App extends Component {
         if (!res.ok) {
           throw new Error(res.status);
         }
-        console.log('hello!');
         return res.json();
       })
       .then((groupData) => this.setState({ groups: groupData }))
@@ -72,8 +71,9 @@ class App extends Component {
 
   // Deletes a post from the state
   deletePost = (postId) => {
-    const newPosts = this.states.posts.filter((post) => post.id !== postId);
-    this.state({ posts: newPosts });
+    const newPosts = this.state.posts.filter((post) => post.id !== postId);
+    this.setState({ posts: newPosts });
+    this.fetchPosts();
   };
 
   // Include an updates post in the state.
