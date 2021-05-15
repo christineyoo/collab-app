@@ -15,25 +15,25 @@ class AddPost extends Component {
   static contextType = ApiContext;
   state = {
     title: {
-      value: '',
+      value: this.props.location.post_name,
       touched: false
     },
     content: {
-      value: '',
+      value: this.props.location.content,
       touched: false
     },
     group: {
-      value: 1,
+      value: this.props.location.group_id,
       touched: false
     },
     author: {
-      value: '',
+      value: this.props.location.author,
       touched: false
     }
   };
 
   // Functions to change the state
-  inputPostName = (title) => {
+  editPostName = (title) => {
     this.setState({
       title: {
         value: title,
@@ -42,7 +42,7 @@ class AddPost extends Component {
     });
   };
 
-  inputContent = (content) => {
+  editContent = (content) => {
     this.setState({
       content: {
         value: content,
@@ -51,7 +51,7 @@ class AddPost extends Component {
     });
   };
 
-  inputGroup = (group) => {
+  editGroup = (group) => {
     this.setState({
       group: {
         value: group,
@@ -60,7 +60,7 @@ class AddPost extends Component {
     });
   };
 
-  inputAuthor = (author) => {
+  editAuthor = (author) => {
     this.setState({
       author: {
         value: author,
@@ -103,7 +103,7 @@ class AddPost extends Component {
     return allGroupOptions;
   };
 
-  handleSubmit = (event, addPostCb) => {
+  handleEdit = (event, addPostCb) => {
     event.preventDefault();
     const { title, content, group, author } = this.state;
     const postTitle = title.value;
@@ -135,11 +135,28 @@ class AddPost extends Component {
         this.context.fetchPosts();
       });
   };
+
   consolelog = () => {
-      console.log('prop', this.props.location.post_name);
-      console.log('prop', this.props.location.content);
-      console.log('prop', this.props.location.author);
-      console.log('prop', this.props.location.group_id);
+    console.log(
+      'prop',
+      typeof this.props.location.post_name,
+      this.props.location.post_name
+    );
+    console.log(
+      'prop',
+      typeof this.props.location.content,
+      this.props.location.content
+    );
+    console.log(
+      'prop',
+      typeof this.props.location.author,
+      this.props.location.author
+    );
+    console.log(
+      'prop',
+      typeof this.props.location.group_id,
+      this.props.location.group_id
+    );
   };
 
   render() {
@@ -147,12 +164,12 @@ class AddPost extends Component {
       <ApiContext.Consumer>
         {(context) => (
           <div>
-            <UserNav />
             {this.consolelog()}
+            <UserNav />
             <main className='add-post'>
               <header className='header'>
                 <h1>Edit post</h1>
-                <form onSubmit={(e) => this.handleSubmit(e, context.addPost)}>
+                <form onSubmit={(e) => this.handleEdit(e, context.addPost)}>
                   <div className='field'>
                     <label htmlFor='title'>Title</label>
                     <br />
@@ -160,7 +177,8 @@ class AddPost extends Component {
                       id='title'
                       type='text'
                       name='title'
-                      onChange={(e) => this.inputPostName(e.target.value)}
+                      value={this.state.title.value}
+                      onChange={(e) => this.editPostName(e.target.value)}
                       required
                     />
                   </div>
@@ -176,7 +194,8 @@ class AddPost extends Component {
                       name='content'
                       rows='15'
                       cols='100'
-                      onChange={(e) => this.inputContent(e.target.value)}
+                      value={this.state.content.value}
+                      onChange={(e) => this.editContent(e.target.value)}
                     ></textarea>
                   </div>
                   <br />
@@ -189,7 +208,8 @@ class AddPost extends Component {
                     <select
                       name='group'
                       id='group'
-                      onChange={(e) => this.inputGroup(e.target.value)}
+                      value={this.state.group.value}
+                      onChange={(e) => this.editGroup(e.target.value)}
                     >
                       {this.renderOptions()}
                     </select>
@@ -202,7 +222,8 @@ class AddPost extends Component {
                       id='name'
                       type='text'
                       name='name'
-                      onChange={(e) => this.inputAuthor(e.target.value)}
+                      value={this.state.author.value}
+                      onChange={(e) => this.editAuthor(e.target.value)}
                       required
                     />
                   </div>
@@ -210,7 +231,7 @@ class AddPost extends Component {
                     <ValidationError message={this.validateAuthor()} />
                   )}
                   <br />
-                  <button type='submit'>Add Post</button>
+                  <button type='submit'>Save</button>
                 </form>
               </header>
             </main>

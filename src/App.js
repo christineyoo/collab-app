@@ -77,12 +77,29 @@ class App extends Component {
     this.fetchPosts();
   };
 
+  // Updates a post
+  updatePost = (data, postName, postContent, postGroup, postAuthor) => {
+    const updatedPostObject = {
+      id: data.id,
+      name: postName,
+      content: postContent,
+      group: postGroup,
+      author: postAuthor
+    };
+    const filteredPosts = this.state.posts.filter(
+      (post) => post.id !== data.id
+    );
+    this.setState({ posts: filteredPosts });
+    this.setState({ posts: [this.state.posts, updatedPostObject] });
+  };
+
   render() {
     const contextValue = {
       groups: this.state.groups,
       posts: this.state.posts,
       addPost: this.addPost,
       deletePost: this.deletePost,
+      updatePost: this.updatePost,
       fetchPosts: this.fetchPosts
     };
 
