@@ -24,7 +24,9 @@ class Group extends Component {
         <UserNav />
         <main>
           <header className='header'>
-            <h1><FindGroupName group_id={this.props.match.params.groupId} /></h1>
+            <h1>
+              <FindGroupName group_id={this.props.match.params.groupId} />
+            </h1>
             <h2>Viewing recent posts from {this.findGroupName()}</h2>
           </header>
           <div className='flex-container'>
