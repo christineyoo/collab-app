@@ -7,6 +7,7 @@ import Group from './Pages/Group/Group';
 import Landing from './Pages/Landing/Landing';
 import { Route, Switch } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
+import PostDetails from './Pages/PostDetails/PostDetails';
 import ScrollToTop from './ScrollToTop';
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
         if (!res.ok) {
           throw new Error(res.status);
         }
-        console.log('hello!')
+        console.log('hello!');
         return res.json();
       })
       .then((groupData) => this.setState({ groups: groupData }))
@@ -94,6 +95,7 @@ class App extends Component {
               <Route exact path='/all-posts' component={AllPosts} />
               <Route exact path='/add-post' component={AddPost} />
               <Route path='/group/:groupId' component={Group} />
+              <Route path='/post/:postId' component={PostDetails} />
               <Route exact path='/' component={Landing} />
               <Route component={NotFound} />
             </Switch>

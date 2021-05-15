@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import FindGroupName from '../FindGroupName/FindGroupName';
 import './Post.css';
 
@@ -8,7 +9,9 @@ class Post extends Component {
       <>
         <section>
           <div className='post'>
-            <h1>{this.props.post_name}</h1>
+            <NavLink to={`/post/${this.props.id}`}>
+              <h1>{this.props.post_name}</h1>
+            </NavLink>
             <p>
               Team: <FindGroupName />
             </p>

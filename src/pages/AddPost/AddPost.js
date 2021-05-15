@@ -7,27 +7,6 @@ import UserNav from '../../Organisms/Nav/UserNav.js';
 class AddPost extends Component {
   static contextType = ApiContext;
 
-  renderNames = () => {
-    const names = [
-      'Alfred Cardenas',
-      'Nick Dequina',
-      'Teresa Dyson',
-      'David Gavrilovic',
-      'Esther Ishii',
-      'James Le',
-      'Jake Nguyen',
-      'Chuck Rah',
-      'Anna Saad',
-      'Destiny Tadena',
-      'Megan Tran',
-      'Chris Yoo'
-    ];
-
-    return names.map((name) => {
-      return <option value={name}>{name}</option>;
-    });
-  };
-
   renderOptions = () => {
     const copyGroups = this.context.groups || [];
     const groupOptions = copyGroups.map((group) => {
