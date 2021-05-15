@@ -135,35 +135,11 @@ class AddPost extends Component {
       });
   };
 
-  consolelog = () => {
-    console.log(
-      'prop',
-      typeof this.props.location.post_name,
-      this.props.location.post_name
-    );
-    console.log(
-      'prop',
-      typeof this.props.location.content,
-      this.props.location.content
-    );
-    console.log(
-      'prop',
-      typeof this.props.location.author,
-      this.props.location.author
-    );
-    console.log(
-      'prop',
-      typeof this.props.location.group_id,
-      this.props.location.group_id
-    );
-  };
-
   render() {
     return (
       <ApiContext.Consumer>
         {(context) => (
           <div>
-            {this.consolelog()}
             <UserNav />
             <main className='add-post'>
               <header className='header'>

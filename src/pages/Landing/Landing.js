@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
 import HomeNav from '../../Organisms/Nav/HomeNav.js';
@@ -10,18 +10,21 @@ class Landing extends Component {
   renderPicture = (isFeaturePicture1) => {
     if (isFeaturePicture1) {
       return (
-      <div className='flex-1'>
-        <img src={featurePicture1} alt='Algebra 1' className='responsive' />
-      </div>
-    );
+        <div className='flex-1'>
+          <img src={featurePicture1} alt='Algebra 1' className='responsive' />
+        </div>
+      );
     } else {
       return (
         <div className='flex-1'>
-        <img src={featurePicture2} alt='Intro to Data Science' className='responsive' />
-      </div>
-      )
+          <img
+            src={featurePicture2}
+            alt='Intro to Data Science'
+            className='responsive'
+          />
+        </div>
+      );
     }
-    
   };
 
   render() {
@@ -38,7 +41,7 @@ class Landing extends Component {
               better... and students learn better.
             </h2>
             <button>
-              <NavLink to='all-posts'>Explore Collab</NavLink>
+              <Link to='all-posts'>Explore Collab</Link>
             </button>
           </header>
 
@@ -46,7 +49,7 @@ class Landing extends Component {
             <h3>Benefits of Collab</h3>
             <div className='flex'>
               <div className='flex-1'>
-              <i className="far fa-comments fa-7x"></i>
+                <i className='far fa-comments fa-7x'></i>
                 <h4>Easy to use</h4>
                 <p>
                   Get updates from your department without the hassle of digging
@@ -54,16 +57,16 @@ class Landing extends Component {
                 </p>
               </div>
               <div className='flex-1'>
-              <i className="fas fa-users fa-7x"></i>
+                <i className='fas fa-users fa-7x'></i>
                 <h4>Stay connected</h4>
                 <p>
-                  Keep tabs on your colleagues to provide feedback, track progress, share best
-                  practices.
+                  Keep tabs on your colleagues to provide feedback, track
+                  progress, share best practices.
                 </p>
               </div>
 
               <div className='flex-1'>
-              <i className="fas fa-arrows-alt-v fa-7x"></i>
+                <i className='fas fa-arrows-alt-v fa-7x'></i>
                 <h4>Vertical alignment</h4>
                 <p>
                   Find resources, updates in curriculum, and assessments for

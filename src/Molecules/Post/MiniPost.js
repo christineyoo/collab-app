@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import FindGroupName from '../FindGroupName/FindGroupName';
 import PropTypes from 'prop-types';
 import './Post.css';
@@ -18,9 +18,9 @@ class MiniPost extends Component {
         {(context) => (
           <section>
             <div className='post'>
-              <NavLink to={`/post/${this.props.id}`}>
+              <Link to={`/post/${this.props.id}`}>
                 <h1 className='post-title'>{this.props.post_name}</h1>
-              </NavLink>
+              </Link>
               <p>
                 Team: <FindGroupName />
               </p>
