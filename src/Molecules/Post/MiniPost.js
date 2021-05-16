@@ -1,21 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import FindGroupName from '../FindGroupName/FindGroupName';
-import PropTypes from 'prop-types';
 import './Post.css';
-import ApiContext from '../../ApiContext';
 
 class MiniPost extends Component {
-  static propTypes = {
-    history: PropTypes.object
-  };
-
-  static contextType = ApiContext;
-
   render() {
     return (
-      <ApiContext.Consumer>
-        {(context) => (
           <section>
             <div className='post'>
               <Link to={`/post/${this.props.id}`}>
@@ -33,8 +23,6 @@ class MiniPost extends Component {
               </p>
             </div>
           </section>
-        )}
-      </ApiContext.Consumer>
     );
   }
 }

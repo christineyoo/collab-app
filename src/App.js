@@ -128,6 +128,7 @@ class App extends Component {
     const contextValue = {
       groups: this.state.groups,
       posts: this.state.posts,
+      comments: this.state.comments,
       addPost: this.addPost,
       deletePost: this.deletePost,
       updatePost: this.updatePost,

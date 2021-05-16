@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import ApiContext from '../../ApiContext';
 import { Link, withRouter } from 'react-router-dom';
-import Comment from '../../Organisms/Comment/Comment';
+import Comments from '../../Organisms/Comments/Comments';
 import FindGroupName from '../FindGroupName/FindGroupName';
 import PropTypes from 'prop-types';
 import './Post.css';
-import ApiContext from '../../ApiContext';
 
 class Post extends Component {
   static propTypes = {
@@ -14,7 +14,7 @@ class Post extends Component {
   static contextType = ApiContext;
 
   state = {
-    isCommented: false
+    isCommentClicked: false
   };
 
   deletePostRequest = (postId, deletePostCb) => {
@@ -80,14 +80,16 @@ class Post extends Component {
                 className='fas fa-plus-circle'
                 onClick={() => {
                   return this.setState({
-                    isCommented: !this.state.isCommented
+                    isCommentClicked: !this.state.isCommentClicked
                   });
                 }}
               >
                 &nbsp; See comments...
               </i>
             </div>
-            {this.state.isCommented && <Comment />}
+            {this.state.isCommentClicked && (
+              <Comments post_id={this.props.match.params.postId} />
+            )}
           </section>
         )}
       </ApiContext.Consumer>
