@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import Comment from '../../Organisms/Comment/Comment';
 import FindGroupName from '../FindGroupName/FindGroupName';
 import PropTypes from 'prop-types';
 import './Post.css';
@@ -11,6 +12,10 @@ class Post extends Component {
   };
 
   static contextType = ApiContext;
+
+  state = {
+    isCommented: false
+  };
 
   deletePostRequest = (postId, deletePostCb) => {
     fetch(`http://localhost:8000/api/posts/${postId}`, {
@@ -71,8 +76,18 @@ class Post extends Component {
                 <button>Edit Post</button>
               </Link>
               <br />
-              <i className='fas fa-plus-circle'></i>&nbsp; Comment
+              <i
+                className='fas fa-plus-circle'
+                onClick={() => {
+                  return this.setState({
+                    isCommented: !this.state.isCommented
+                  });
+                }}
+              >
+                &nbsp; See comments...
+              </i>
             </div>
+            {this.state.isCommented && <Comment />}
           </section>
         )}
       </ApiContext.Consumer>
