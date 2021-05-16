@@ -15,11 +15,11 @@ class App extends Component {
   state = {
     groups: [],
     posts: [],
+    comments: [],
     error: null
   };
 
   componentDidMount() {
-    // Fetches group data
     fetch('http://localhost:8000/api/groups', {
       method: 'GET',
       headers: {
@@ -34,9 +34,8 @@ class App extends Component {
       })
       .then((groupData) => this.setState({ groups: groupData }))
       .catch((error) => this.setState({ error }));
-
-    // Fetches post data
     this.fetchPosts();
+    this.fetchComments();
   }
 
   fetchPosts = () => {
@@ -58,7 +57,23 @@ class App extends Component {
       .catch((error) => this.setState({ error }));
   };
 
-  // Adds a post to the state
+  fetchComments = () => {
+    fetch('http://localhost:8000/api/comments', {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/json'
+      }
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(res.status);
+        }
+        return res.json();
+      })
+      .then((commentData) => this.setState({ comments: commentData }))
+      .catch((error) => this.setState({ error }));
+  };
+
   addPost = (data, postName, postContent, postGroup, postAuthor) => {
     const newPostObject = {
       id: data.id,
@@ -70,14 +85,12 @@ class App extends Component {
     this.setState({ posts: [...this.state.posts, newPostObject] });
   };
 
-  // Deletes a post from the state
   deletePost = (postId) => {
     const newPosts = this.state.posts.filter((post) => post.id !== postId);
     this.setState({ posts: newPosts });
     this.fetchPosts();
   };
 
-  // Updates a post
   updatePost = (data, postName, postContent, postGroup, postAuthor) => {
     const updatedPostObject = {
       id: data.id,
@@ -93,6 +106,24 @@ class App extends Component {
     this.setState({ posts: [this.state.posts, updatedPostObject] });
   };
 
+  addComment = (data, commentContent, commentAuthor, commentPostId) => {
+    const newCommentObject = {
+      id: data.id,
+      content: commentContent,
+      author: commentAuthor,
+      post_id: commentPostId
+    };
+    this.setState({ comments: [...this.state.comments, newCommentObject] });
+  };
+
+  deleteComment = (commentId) => {
+    const newComments = this.state.comments.filter(
+      (comment) => comment.id !== commentId
+    );
+    this.setState({ comments: newComments });
+    this.fetchComments();
+  };
+
   render() {
     const contextValue = {
       groups: this.state.groups,
@@ -100,7 +131,8 @@ class App extends Component {
       addPost: this.addPost,
       deletePost: this.deletePost,
       updatePost: this.updatePost,
-      fetchPosts: this.fetchPosts
+      fetchPosts: this.fetchPosts,
+      fetchComments: this.fetchComments
     };
 
     return (

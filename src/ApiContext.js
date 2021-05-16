@@ -149,7 +149,9 @@ const ApiContext = React.createContext({
   ],
   addPost: () => {},
   deletePost: () => {},
-  updatePost: () => {}
+  updatePost: () => {},
+  fetchPosts: () => {},
+  fetchComments: () => {}
 });
 
 export default ApiContext;
