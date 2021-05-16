@@ -11,26 +11,34 @@ class Comments extends Component {
     return copyComments
       .filter((comment) => comment.post_id === +this.props.post_id)
       .map((comment) => {
-        return <Comment 
-          author={comment.author}
-          content={comment.content}
-          modified={comment.modified}
-        />;
+        return (
+          <Comment
+            author={comment.author}
+            content={comment.content}
+            modified={comment.modified}
+          />
+        );
       });
   };
 
   render() {
     return (
       <>
-      {this.renderComments()}
-        <label htmlFor='comment'>&nbsp; Comment</label>
-        <input
+        {this.renderComments()}
+        <form>
+          <label htmlFor='comment'>
+          <i class='far fa-comment fa-3x'></i>
+        </label>
+        <textarea
           id='comment'
-          type='text'
           name='comment'
+          rows='5'
+          cols='50'
           placeholder='Leave a comment...'
-        />
-        <button>Submit</button>
+        ></textarea>
+        <button type='submit'>Submit</button>
+        </form>
+        
       </>
     );
   }

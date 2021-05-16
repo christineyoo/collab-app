@@ -132,6 +132,8 @@ class App extends Component {
       addPost: this.addPost,
       deletePost: this.deletePost,
       updatePost: this.updatePost,
+      addComment: this.addComment,
+      deleteComment: this.deleteComment,
       fetchPosts: this.fetchPosts,
       fetchComments: this.fetchComments
     };
