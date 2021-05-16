@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
+import AddComment from './AddComment';
 import Comment from '../../Molecules/Comment/Comment';
 
 class Comments extends Component {
@@ -25,20 +26,7 @@ class Comments extends Component {
     return (
       <>
         {this.renderComments()}
-        <form>
-          <label htmlFor='comment'>
-          <i class='far fa-comment fa-3x'></i>
-        </label>
-        <textarea
-          id='comment'
-          name='comment'
-          rows='5'
-          cols='50'
-          placeholder='Leave a comment...'
-        ></textarea>
-        <button type='submit'>Submit</button>
-        </form>
-        
+        <AddComment post_id={this.props.post_id} />
       </>
     );
   }

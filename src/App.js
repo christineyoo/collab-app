@@ -83,6 +83,7 @@ class App extends Component {
       author: postAuthor
     };
     this.setState({ posts: [...this.state.posts, newPostObject] });
+    this.fetchPosts();
   };
 
   deletePost = (postId) => {
@@ -114,6 +115,7 @@ class App extends Component {
       post_id: commentPostId
     };
     this.setState({ comments: [...this.state.comments, newCommentObject] });
+    this.fetchComments();
   };
 
   deleteComment = (commentId) => {

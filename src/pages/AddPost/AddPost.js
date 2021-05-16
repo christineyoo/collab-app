@@ -92,14 +92,10 @@ class AddPost extends Component {
 
   renderOptions = () => {
     const copyGroups = this.context.groups || [];
-    const groupOptions = copyGroups.map((group) => {
-      return <option value={group.group_name}>{group.group_name}</option>;
+    const groupOptions = copyGroups.map((group, i) => {
+      return <option value={i + 1}>{group.group_name}</option>;
     });
-    const allGroupOptions = [
-      ...groupOptions,
-      <option value='Math department'>Math department</option>
-    ];
-    return allGroupOptions;
+    return groupOptions;
   };
 
   handleSubmit = (event, addPostCb) => {
@@ -131,7 +127,6 @@ class AddPost extends Component {
       .then((data) => {
         this.props.history.push('/all-posts');
         addPostCb(data, postTitle, postContent, postGroup, postAuthor);
-        this.context.fetchPosts();
       });
   };
 
