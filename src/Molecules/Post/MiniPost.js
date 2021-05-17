@@ -6,23 +6,24 @@ import './Post.css';
 class MiniPost extends Component {
   render() {
     return (
-          <section>
-            <div className='post'>
-              <Link to={`/post/${this.props.id}`}>
-                <h1 className='post-title'>{this.props.post_name}</h1>
-              </Link>
-              <p>
-                Team: <FindGroupName />
-              </p>
-              <p>
-                {this.props.content.substring(0, 100)}
-                {'...'}
-              </p>
-              <p>
-                Posted by {this.props.author} on {this.props.modified}
-              </p>
-            </div>
-          </section>
+      <section>
+        <div className='post'>
+          <Link to={`/post/${this.props.id}`}>
+            <h1 className='post-title'>{this.props.post_name}</h1>
+          </Link>
+          <p>
+            Team: <FindGroupName group_id={this.props.group_id} />
+          </p>
+          <p>
+            {this.props.content.substring(0, 100)}
+            {'...'}
+          </p>
+          <p>
+            Posted by {this.props.author} on{' '}
+            {this.props.modified.substring(0, 10)}
+          </p>
+        </div>
+      </section>
     );
   }
 }

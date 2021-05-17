@@ -110,6 +110,7 @@ class AddPost extends Component {
     const postContent = content.value;
     const postGroup = group.value;
     const postAuthor = author.value;
+    const postModified = '2021-05-20 23:21:26.392487+00';
     fetch(`http://localhost:8000/api/posts/${postId}`, {
       method: 'PATCH',
       headers: {
@@ -119,7 +120,8 @@ class AddPost extends Component {
         post_name: postTitle,
         content: postContent,
         group_id: +postGroup,
-        author: postAuthor
+        author: postAuthor,
+        modified: postModified
       })
     })
       .then((res) => {
@@ -130,7 +132,7 @@ class AddPost extends Component {
       })
       .then((data) => {
         this.props.history.push(`/all-posts`);
-        editPostCb(data, postTitle, postContent, postGroup, postAuthor);
+        editPostCb(data, postTitle, postContent, postGroup, postAuthor, postModified);
         this.context.fetchPosts();
       });
   };

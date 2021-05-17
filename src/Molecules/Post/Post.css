@@ -1,3 +1,7 @@
+button, i {
+  cursor: pointer;
+}
+
 section {
   min-height: 200px;
   padding: 6% 0;

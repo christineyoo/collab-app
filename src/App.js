@@ -9,7 +9,7 @@ import { Route, Switch } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
 import PostDetails from './Pages/PostDetails/PostDetails';
 import ScrollToTop from './ScrollToTop';
-import UpdatePost from './Pages/EditPost/EditPost';
+import EditPost from './Pages/EditPost/EditPost';
 
 class App extends Component {
   state = {
@@ -74,15 +74,23 @@ class App extends Component {
       .catch((error) => this.setState({ error }));
   };
 
-  addPost = (data, postName, postContent, postGroup, postAuthor) => {
+  addPost = (
+    data,
+    postName,
+    postContent,
+    postGroup,
+    postAuthor,
+    postModified
+  ) => {
     const newPostObject = {
       id: data.id,
       name: postName,
       content: postContent,
       group: postGroup,
-      author: postAuthor
+      author: postAuthor,
+      modified: postModified
     };
-    this.setState({ posts: [...this.state.posts, newPostObject] });
+    this.setState({ posts: [newPostObject, ...this.state.posts] });
     this.fetchPosts();
   };
 
@@ -92,19 +100,27 @@ class App extends Component {
     this.fetchPosts();
   };
 
-  updatePost = (data, postName, postContent, postGroup, postAuthor) => {
+  updatePost = (
+    data,
+    postName,
+    postContent,
+    postGroup,
+    postAuthor,
+    postModified
+  ) => {
     const updatedPostObject = {
       id: data.id,
       name: postName,
       content: postContent,
       group: postGroup,
-      author: postAuthor
+      author: postAuthor,
+      modified: postModified
     };
     const filteredPosts = this.state.posts.filter(
       (post) => post.id !== data.id
     );
     this.setState({ posts: filteredPosts });
-    this.setState({ posts: [this.state.posts, updatedPostObject] });
+    this.setState({ posts: [updatedPostObject, ...this.state.posts] });
   };
 
   addComment = (data, commentContent, commentAuthor, commentPostId) => {
@@ -149,7 +165,7 @@ class App extends Component {
               <Route exact path='/all-posts' component={AllPosts} />
               <Route exact path='/add-post' component={AddPost} />
               <Route path='/group/:groupId' component={Group} />
-              <Route path='/post/:postId/edit' component={UpdatePost} />
+              <Route path='/post/:postId/edit' component={EditPost} />
               <Route path='/post/:postId' component={PostDetails} />
               <Route exact path='/' component={Landing} />
               <Route component={NotFound} />

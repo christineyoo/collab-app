@@ -40,7 +40,6 @@ class Post extends Component {
         console.error(error);
       });
   };
-
   render() {
     return (
       <ApiContext.Consumer>
@@ -49,11 +48,12 @@ class Post extends Component {
             <div className='post'>
               <h1>{this.props.post_name}</h1>
               <p>
-                Team: <FindGroupName />
+                Team: <FindGroupName group_id={this.props.group_id} />
               </p>
               <p>{this.props.content}</p>
               <p>
-                Posted by {this.props.author} on {this.props.modified}
+                Posted by {this.props.author} on{' '}
+                {this.props.modified.substring(0, 10)}
               </p>
               <button
                 onClick={() =>
