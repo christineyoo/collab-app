@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import polkadots from '../../images/polkadots.png';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
 import HomeNav from '../../Organisms/Nav/HomeNav.js';
@@ -33,7 +34,7 @@ class Landing extends Component {
         <HomeNav />
         <main>
           <header className='header'>
-            <h1 className='landing'>Collaborate better.</h1>
+            <h1>Collaborate better.</h1>
             <h2>
               Collab is a productivity app that helps teachers increase their
               efficacy by enabling intra- and inter-collaboration amongst course
@@ -45,7 +46,7 @@ class Landing extends Component {
             </button>
           </header>
 
-          <section>
+          <section style={{ backgroundImage: `url(${polkadots})` }}>
             <h3>Benefits of Collab</h3>
             <div className='flex'>
               <div className='flex-1'>
