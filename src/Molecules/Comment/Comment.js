@@ -27,7 +27,7 @@ class Comment extends Component {
         return res.json();
       })
       .then((data) => {
-        this.props.history.push('/all-posts');
+        this.props.history.push(`/post/${this.props.post_id}`);
         deleteCommentCb(commentId);
       })
       .catch((error) => {
@@ -43,7 +43,7 @@ class Comment extends Component {
             <p>
               <strong>{this.props.author}</strong>
             </p>
-            <p>{this.props.modified}</p>
+            <p>{this.props.modified.substring(0, 10)}</p>
             <br />
             <p>{this.props.content}</p>
             <button

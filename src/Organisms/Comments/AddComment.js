@@ -10,7 +10,9 @@ class AddComment extends Component {
   static contextType = ApiContext;
 
   state = {
-    content: ''
+    content: {
+      value: ''
+    }
   };
 
   inputContent = (content) => {
@@ -46,8 +48,9 @@ class AddComment extends Component {
         return res.json();
       })
       .then((data) => {
-        this.props.history.push(`/all-posts`);
+        this.props.history.push(`/post/${commentPostId}`);
         addCommentCb(data, commentContent, commentAuthor, commentPostId);
+        this.setState({ content: { value: '' } });
       });
   };
 

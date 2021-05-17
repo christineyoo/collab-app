@@ -76,7 +76,11 @@ class Post extends Component {
               </Link>
               <br />
               <i
-                className='fas fa-plus-circle'
+                className={
+                  !this.state.isCommentClicked
+                    ? 'fas fa-chevron-down'
+                    : 'fas fa-chevron-up'
+                }
                 onClick={() => {
                   return this.setState({
                     isCommentClicked: !this.state.isCommentClicked

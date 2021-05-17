@@ -1,4 +1,4 @@
-button, i {
+button, .fa-chevron-down, .fa-chevron-up {
   cursor: pointer;
 }
 

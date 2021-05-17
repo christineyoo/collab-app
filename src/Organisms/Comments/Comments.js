@@ -18,6 +18,7 @@ class Comments extends Component {
             content={comment.content}
             modified={comment.modified}
             comment_id={comment.id}
+            post_id={this.props.post_id}
           />
         );
       });
