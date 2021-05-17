@@ -17,6 +17,7 @@ class Comments extends Component {
             author={comment.author}
             content={comment.content}
             modified={comment.modified}
+            comment_id={comment.id}
           />
         );
       });

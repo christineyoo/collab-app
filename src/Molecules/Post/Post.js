@@ -25,7 +25,6 @@ class Post extends Component {
       }
     })
       .then((res) => {
-        console.log('this.props.post_id', this.props.post_id);
         if (!res.ok) {
           return res.json().then((error) => {
             throw error;
