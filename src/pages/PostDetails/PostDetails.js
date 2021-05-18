@@ -4,6 +4,7 @@ import Footer from '../../Organisms/Footer/Footer.js';
 import Post from '../../Molecules/Post/Post';
 import SideBar from '../../Organisms/SideBar/SideBar.js';
 import UserNav from '../../Organisms/Nav/UserNav.js';
+import './PostDetails.css';
 
 class PostDetails extends Component {
   static contextType = ApiContext;
@@ -35,18 +36,16 @@ class PostDetails extends Component {
     return (
       <>
         <UserNav />
-        <main>
-          <header className='header'>
-            <h1>Post Details</h1>
-            <h2>Stay in the loop by following comment threads.</h2>
-          </header>
-          <div className='flex-container'>
-            <div className='flex-1'>
-              <SideBar />
-            </div>
-            <div className='flex-3'>{this.displayPost()}</div>
+        <header className='post-details'>
+          <h1 id='post-details-h1'>Post Details</h1>
+          <h2>Stay in the loop by following comment threads.</h2>
+        </header>
+        <div className='flex-container'>
+          <div className='flex-1'>
+            <SideBar />
           </div>
-        </main>
+          <div className='flex-3'>{this.displayPost()}</div>
+        </div>
         <Footer />
       </>
     );

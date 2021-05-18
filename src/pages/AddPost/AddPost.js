@@ -137,9 +137,9 @@ class AddPost extends Component {
         {(context) => (
           <div>
             <UserNav />
-            <main className='add-post'>
+            <div className='add-post'>
               <header className='header'>
-                <h1>Add a new post</h1>
+                <h1 id='add-post-h1'>Add a new post</h1>
                 <form onSubmit={(e) => this.handleSubmit(e, context.addPost)}>
                   <div className='field'>
                     <label htmlFor='title'>Title</label>
@@ -201,7 +201,7 @@ class AddPost extends Component {
                   <button type='submit'>Add Post</button>
                 </form>
               </header>
-            </main>
+            </div>
             <Footer />
           </div>
         )}

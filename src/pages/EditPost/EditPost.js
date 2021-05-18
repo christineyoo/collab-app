@@ -133,7 +133,6 @@ class AddPost extends Component {
       .then((data) => {
         this.props.history.push(`/all-posts`);
         editPostCb(data, postTitle, postContent, postGroup, postAuthor, postModified);
-        this.context.fetchPosts();
       });
   };
 
@@ -143,7 +142,7 @@ class AddPost extends Component {
         {(context) => (
           <div>
             <UserNav />
-            <main className='add-post'>
+            <div className='add-post'>
               <header className='header'>
                 <h1>Edit post</h1>
                 <form
@@ -219,7 +218,7 @@ class AddPost extends Component {
                   <button type='submit'>Save</button>
                 </form>
               </header>
-            </main>
+            </div>
             <Footer />
           </div>
         )}

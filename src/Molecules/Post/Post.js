@@ -46,7 +46,7 @@ class Post extends Component {
         {(context) => (
           <section>
             <div className='post'>
-              <h1>{this.props.post_name}</h1>
+              <h1 id='post-h1'>{this.props.post_name}</h1>
               <p>
                 Team: <FindGroupName group_id={this.props.group_id} />
               </p>
@@ -56,6 +56,7 @@ class Post extends Component {
                 {this.props.modified.substring(0, 10)}
               </p>
               <button
+              className='comment-option'
                 onClick={() =>
                   this.deletePostRequest(this.props.post_id, context.deletePost)
                 }
@@ -72,7 +73,7 @@ class Post extends Component {
                   group_id: this.props.group_id
                 }}
               >
-                <button>Edit Post</button>
+                <button className='comment-option'>Edit Post</button>
               </Link>
               <br />
               <i

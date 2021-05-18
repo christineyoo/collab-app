@@ -1,25 +1,43 @@
-button, .fa-chevron-down, .fa-chevron-up {
+button,
+.fa-chevron-down,
+.fa-chevron-up {
   cursor: pointer;
+}
+
+.comment-option {
+  padding: 0.25rem;
+  margin: 0.75rem;
+  font-size: 1rem;
+}
+
+#post-h1 {
+  font-size: 2rem;
+}
+
+div .post {
+  border: 1px solid #000;
+  margin: 2%;
+  padding: 2%;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.post-title:hover {
+  color: #468b78;
 }
 
 section {
   min-height: 200px;
-  padding: 6% 0;
-  background-color: #dbe4f1;
 }
 
 section:nth-child(even) {
   background-color: #cdd9eb;
 }
 
-.post-title:hover {
-  color: #d3d3d3;
-}
-
-.post {
-  border: 1px solid #000;
-  margin: 5%;
-  padding: 5%;
-  background-color: #ffffff;
-  text-align: left;
+@media all and (min-width: 800px) {
+  .comment-option {
+    padding: 0.5rem;
+    margin: 0.75rem;
+    font-size: 1.25rem;
+  }
 }

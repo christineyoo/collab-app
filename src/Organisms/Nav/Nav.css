@@ -1,8 +1,9 @@
 nav {
   display: flex;
   text-align: left;
-  background-color: #becee5;
+  background-color: #ebe3d5;
   padding: 1rem;
+  position: fixed;
 }
 
 .flex-1 {
@@ -10,5 +11,3 @@ nav {
   text-align: center;
 }
 
-@media all and (min-width: 800px) {
-}

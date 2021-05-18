@@ -18,7 +18,7 @@ class SideBar extends Component {
             activeStyle={{
               fontStyle: 'bold',
               color: '#33333',
-              fontWeight: '900'
+              fontWeight: '900',
             }}
           >
             {group.group_name}

@@ -3,7 +3,24 @@
   flex-direction: column;
 }
 
+.all-posts{
+  padding-top: 10%;
+}
+
+h1 .all-posts {
+  font-size: 2rem;
+}
+
+header {
+  background-image: url(../../images/polkadots.png);
+}
+
 @media all and (min-width: 800px) {
+  .all-posts{
+    padding-top: 6%;
+    font-size: 2rem;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: row;

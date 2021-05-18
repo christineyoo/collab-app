@@ -15,3 +15,13 @@
 .flex-3 {
   flex: 3;
 }
+
+.group {
+  padding-top: 30%;
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    padding-top: 10%;
+  }
+}

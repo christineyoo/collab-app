@@ -11,8 +11,7 @@ class Group extends Component {
     return (
       <>
         <UserNav />
-        <main>
-          <header className='header'>
+          <header className='group'>
             <h1>
               <FindGroupName group_id={this.props.match.params.groupId} />
             </h1>
@@ -29,7 +28,6 @@ class Group extends Component {
               <Posts isOnGroup group_id={this.props.match.params.groupId} />
             </div>
           </div>
-        </main>
         <Footer />
       </>
     );

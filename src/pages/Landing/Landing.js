@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import polkadots from '../../images/polkadots.png';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
 import HomeNav from '../../Organisms/Nav/HomeNav.js';
-import featurePicture1 from './algebra-course.png';
-import featurePicture2 from './ids-course.png';
+// import featurePicture1 from './algebra-course.png';
+// import featurePicture2 from './ids-course.png';
 
 class Landing extends Component {
   renderPicture = (isFeaturePicture1) => {
     if (isFeaturePicture1) {
       return (
         <div className='flex-1'>
-          <img src={featurePicture1} alt='Algebra 1' className='responsive' />
+          {/* <img src={featurePicture1} alt='Algebra 1' className='responsive' /> */}
         </div>
       );
     } else {
       return (
         <div className='flex-1'>
-          <img
+          {/* <img
             src={featurePicture2}
             alt='Intro to Data Science'
             className='responsive'
-          />
+          /> */}
         </div>
       );
     }
@@ -32,9 +31,8 @@ class Landing extends Component {
     return (
       <>
         <HomeNav />
-        <main>
-          <header className='header'>
-            <h1>Collaborate better.</h1>
+          <header className='landing'>
+            <h1 id='landing-h1'>Collaborate better.</h1>
             <h2>
               Collab is a productivity app that helps teachers increase their
               efficacy by enabling intra- and inter-collaboration amongst course
@@ -46,7 +44,7 @@ class Landing extends Component {
             </button>
           </header>
 
-          <section style={{ backgroundImage: `url(${polkadots})` }}>
+          <section>
             <h3>Benefits of Collab</h3>
             <div className='flex'>
               <div className='flex-1'>
@@ -104,7 +102,6 @@ class Landing extends Component {
               </div>
             </div>
           </section>
-        </main>
         <Footer />
       </>
     );

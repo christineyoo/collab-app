@@ -1,0 +1,9 @@
+#post-details-h1 {
+  padding-top: 30%;
+}
+
+@media all and (min-width: 800px) {
+  #post-details-h1 {
+    padding-top: 10%;
+  }
+}

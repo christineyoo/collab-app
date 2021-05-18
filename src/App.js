@@ -121,6 +121,7 @@ class App extends Component {
     );
     this.setState({ posts: filteredPosts });
     this.setState({ posts: [updatedPostObject, ...this.state.posts] });
+    this.fetchPosts();
   };
 
   addComment = (data, commentContent, commentAuthor, commentPostId) => {

@@ -11,6 +11,15 @@
   background-color: #f8fafc;
 }
 
+button {
+  background-color: transparent;
+  border: 2px solid #333333;
+  padding: 1rem;
+  font-size: 1.25rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
 body {
   position: relative;
 }
