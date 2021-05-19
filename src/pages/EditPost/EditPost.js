@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import UserNav from '../../Organisms/Nav/UserNav.js';
 import ValidationError from '../../ValidationError/ValidationError';
 
-class AddPost extends Component {
+class EditPost extends Component {
   static propTypes = {
     history: PropTypes.object,
     location: PropTypes.object
@@ -93,14 +93,11 @@ class AddPost extends Component {
 
   renderOptions = () => {
     const copyGroups = this.context.groups || [];
-    const groupOptions = copyGroups.map((group) => {
-      return <option value={group.group_name}>{group.group_name}</option>;
+    const groupOptions = copyGroups.map((group, i) => {
+      return <option value={i + 1}>{group.group_name}</option>;
     });
-    const allGroupOptions = [
-      ...groupOptions,
-      <option value='Math department'>Math department</option>
-    ];
-    return allGroupOptions;
+    
+    return groupOptions;
   };
 
   handleEdit = (event, postId, editPostCb) => {
@@ -227,4 +224,4 @@ class AddPost extends Component {
   }
 }
 
-export default AddPost;
+export default EditPost;
