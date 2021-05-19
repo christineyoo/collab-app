@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import ApiContext from '../../ApiContext';
 import PropTypes from 'prop-types';
+import './Comments.css';
 
 class AddComment extends Component {
   static propTypes = {
@@ -58,12 +59,11 @@ class AddComment extends Component {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <form onSubmit={(e) => this.handleSubmit(e, context.addComment)}>
-            <label htmlFor='comment'>
-              <i class='far fa-comment fa-3x'></i>
-            </label>
+          <form className='comment-card flex' onSubmit={(e) => this.handleSubmit(e, context.addComment)}>
+            <label htmlFor='comment'></label>
             <textarea
               id='comment'
+              className='add-comment flex-2'
               name='comment'
               rows='5'
               cols='50'
@@ -71,7 +71,7 @@ class AddComment extends Component {
               placeholder='Leave a comment...'
               required
             ></textarea>
-            <button type='submit'>Submit</button>
+            <button className='add-comment flex-1' type='submit'>Submit</button>
           </form>
         )}
       </ApiContext.Consumer>

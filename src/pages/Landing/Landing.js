@@ -44,7 +44,7 @@ class Landing extends Component {
             </button>
           </header>
 
-          <section>
+          <section className='landing'>
             <h3>Benefits of Collab</h3>
             <div className='flex'>
               <div className='flex-1'>
@@ -74,7 +74,7 @@ class Landing extends Component {
               </div>
             </div>
           </section>
-          <section id='features'>
+          <section id='features' className='landing'>
             <h3>Features of Collab</h3>
             <div className='flex'>
               <div className='flex-1'>

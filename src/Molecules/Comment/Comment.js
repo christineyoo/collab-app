@@ -40,20 +40,21 @@ class Comment extends Component {
       <ApiContext.Consumer>
         {(context) => (
           <div className='comment-card'>
-            <p>
-              <strong>{this.props.author}</strong> {' on '} {this.props.modified.substring(0, 10)}
-            </p>
-            <p>{this.props.content}</p>
-            <i
-            className='far fa-trash-alt fa-5x'
-              onClick={() =>
-                this.deleteCommentRequest(
-                  this.props.comment_id,
-                  context.deleteComment
-                )
-              }
-            >
-            </i>
+              <p className='comment'>
+                <strong>{this.props.author}</strong> {' on '}{' '}
+                <span id='modified'>{this.props.modified.substring(0, 10)}</span>
+                <br />
+                {this.props.content}
+              </p>
+              <i
+                className='far fa-trash-alt fa-5x'
+                onClick={() =>
+                  this.deleteCommentRequest(
+                    this.props.comment_id,
+                    context.deleteComment
+                  )
+                }
+              ></i>
           </div>
         )}
       </ApiContext.Consumer>

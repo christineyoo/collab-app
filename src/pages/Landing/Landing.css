@@ -57,13 +57,13 @@ header .landing {
   height: auto;
 }
 
-section {
+section .landing {
   min-height: 200px;
   background-color: #b13c47;
   padding: 6% 0;
 }
 
-section:nth-child(even) {
+section #features {
   background-color: #e79686;
 }
 

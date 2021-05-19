@@ -14,24 +14,17 @@ button,
   font-size: 2rem;
 }
 
+
 div .post {
   border: 1px solid #000;
-  margin: 2%;
   padding: 2%;
+  margin: 1rem;
   background-color: #ffffff;
   text-align: left;
 }
 
 .post-title:hover {
   color: #468b78;
-}
-
-section {
-  min-height: 200px;
-}
-
-section:nth-child(even) {
-  background-color: #cdd9eb;
 }
 
 @media all and (min-width: 800px) {

@@ -1,0 +1,16 @@
+form .comment-card .flex {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+}
+
+textarea .add-comment .flex-2 {
+    flex: 2;
+    text-align: left;
+}
+
+button .add-comment .flex-1 {
+    flex: 1;
+    height: 1rem;
+    padding: 0;
+}

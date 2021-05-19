@@ -44,7 +44,7 @@ class Post extends Component {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <section>
+          <div>
             <div className='post'>
               <h1 id='post-h1'>{this.props.post_name}</h1>
               <p>
@@ -94,7 +94,7 @@ class Post extends Component {
             {this.state.isCommentClicked && (
               <Comments post_id={this.props.match.params.postId} />
             )}
-          </section>
+          </div>
         )}
       </ApiContext.Consumer>
     );
