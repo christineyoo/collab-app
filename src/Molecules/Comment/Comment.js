@@ -41,12 +41,11 @@ class Comment extends Component {
         {(context) => (
           <div className='comment-card'>
             <p>
-              <strong>{this.props.author}</strong>
+              <strong>{this.props.author}</strong> {' on '} {this.props.modified.substring(0, 10)}
             </p>
-            <p>{this.props.modified.substring(0, 10)}</p>
-            <br />
             <p>{this.props.content}</p>
-            <button
+            <i
+            className='far fa-trash-alt fa-5x'
               onClick={() =>
                 this.deleteCommentRequest(
                   this.props.comment_id,
@@ -54,8 +53,7 @@ class Comment extends Component {
                 )
               }
             >
-              Delete comment
-            </button>
+            </i>
           </div>
         )}
       </ApiContext.Consumer>

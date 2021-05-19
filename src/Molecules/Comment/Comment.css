@@ -5,3 +5,7 @@
     background: #fff;
     font-size: 5px;
 }
+
+ i:hover {
+     cursor: pointer;
+ }

@@ -73,7 +73,7 @@ class Post extends Component {
                   group_id: this.props.group_id
                 }}
               >
-                <button className='comment-option'>Edit Post</button>
+                <button className='comment-option'>Edit Post</button> 
               </Link>
               <br />
               <i
