@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -5,10 +7,8 @@
 
 .all-posts{
   padding-top: 10%;
-}
+  font-family: 'Abril Fatface', cursive;
 
-h1 .all-posts {
-  font-size: 2rem;
 }
 
 header {
@@ -19,6 +19,7 @@ header {
   .all-posts{
     padding-top: 6%;
     font-size: 2rem;
+  font-family: 'Abril Fatface', cursive;
   }
 
   .flex-container {

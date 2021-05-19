@@ -55,8 +55,7 @@ class AddComment extends Component {
       });
   };
 
-  clearText = () => {
-  };
+  clearText = () => {};
 
   render() {
     return (
@@ -71,7 +70,7 @@ class AddComment extends Component {
               id='comment'
               className='add-comment flex-2'
               name='comment'
-              rows='5'
+              rows='1'
               cols='50'
               onChange={(e) => this.inputContent(e.target.value)}
               placeholder='Leave a comment...'
