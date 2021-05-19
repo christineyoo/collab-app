@@ -31,7 +31,7 @@ class Landing extends Component {
     return (
       <>
         <HomeNav />
-          <header className='landing'>
+          <header className='landing-header'>
             <h1 id='landing-h1'>Collaborate better.</h1>
             <h2>
               Collab is a productivity app that helps teachers increase their

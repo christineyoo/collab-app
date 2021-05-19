@@ -46,7 +46,7 @@ nav {
   right: 0;
 }
 
-header .landing {
+.landing-header {
   padding: 20% 10% 8% 10%;
   background-image: url('../../images/plants-bg.png');
   background-position: 85% 90%;

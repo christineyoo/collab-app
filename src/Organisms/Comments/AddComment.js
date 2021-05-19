@@ -49,17 +49,23 @@ class AddComment extends Component {
         return res.json();
       })
       .then((data) => {
-        this.props.history.push(`/post/${commentPostId}`);
+        // window.location.reload();
+        // this.props.history.push(`/post/${commentPostId}`);
         addCommentCb(data, commentContent, commentAuthor, commentPostId);
-        this.setState({ content: { value: '' } });
       });
+  };
+
+  clearText = () => {
   };
 
   render() {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <form className='comment-card flex' onSubmit={(e) => this.handleSubmit(e, context.addComment)}>
+          <form
+            className='comment-card flex'
+            onSubmit={(e) => this.handleSubmit(e, context.addComment)}
+          >
             <label htmlFor='comment'></label>
             <textarea
               id='comment'
@@ -71,7 +77,9 @@ class AddComment extends Component {
               placeholder='Leave a comment...'
               required
             ></textarea>
-            <button className='add-comment flex-1' type='submit'>Submit</button>
+            <button className='add-comment flex-1' type='submit'>
+              Submit
+            </button>
           </form>
         )}
       </ApiContext.Consumer>
