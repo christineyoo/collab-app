@@ -1,5 +1,8 @@
-* {
-  box-sizing: border-box;
+#add-post-bg {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-image: url('../../images/coffee.png');
+  background-position: 100% 100%;
 }
 
 .add-post {

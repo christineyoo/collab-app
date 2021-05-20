@@ -135,7 +135,7 @@ class AddPost extends Component {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <div>
+          <div id='add-post-bg'>
             <UserNav />
             <div className='add-post'>
               <header className='header'>
