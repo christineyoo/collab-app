@@ -34,6 +34,10 @@ h3 {
   padding: 10%;
 }
 
+header .landing {
+  padding: 15% 0;
+}
+
 #landing-h1 {
   font-family: 'Abril Fatface', cursive;
   font-weight: 1;
@@ -43,6 +47,10 @@ h3 {
 
 #landing-h2 {
   margin: 5% 10% 0 10%;
+}
+
+#landing-h3 {
+  padding: 10% 0;
 }
 
 #landing-button {
@@ -61,11 +69,20 @@ h3 {
   margin: 0 1rem 1rem 1rem;
 }
 
-.landing-header {
+/* #landing-header {
   padding: 20% 10% 8% 10%;
-  background-image: url('../../images/plants-bg.png');
-  background-position: 85% 60%;
+  background-image: url(../../images/plants-bg.png);
+  background-position: 50% 100%;
+  background-size: auto 100%;
   background-repeat: repeat-x;
+} */
+
+#landing-header {
+  background: url(../../images/plants-bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .responsive {
@@ -73,20 +90,20 @@ h3 {
   height: auto;
 }
 
-section .landing {
+.landing-section {
   min-height: 200px;
-  padding: 6% 0;
+  padding: 7%;
 }
 
 #benefits {
-  background-image: url('../../images/cactus.png');
+  background-image: url(../../images/cactus.png);
   background-position: 50% 0%;
   background-size: auto 100%;
   background-repeat: repeat-x;
 }
 
 #features {
-  background-image: url('../../images/art.png');
+  background-image: url(../../images/art.png);
   background-position: 50% 0%;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -107,11 +124,15 @@ section .landing {
   }
 
   header .landing {
-    padding: 7% 0 7% 0;
+    padding: 15% 0;
     background-position: 50% 95%;
   }
 
-  h3 {
-  padding: 5%;
+  .landing-section {
+    padding: 7% 0;
+  }
+
+  #landing-h3 {
+    padding: 2% 0;
   }
 }

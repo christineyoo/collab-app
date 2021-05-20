@@ -31,7 +31,7 @@ class Landing extends Component {
     return (
       <>
         <HomeNav />
-        <header className='landing-header'>
+        <header id='landing-header' className='landing'>
           <h1 id='landing-h1'>Collaborate better.</h1>
           <h2 id='landing-h2'>
             Collab is a productivity app that helps teachers increase their
@@ -43,8 +43,8 @@ class Landing extends Component {
           </button>
         </header>
 
-        <section id='benefits' className='landing'>
-          <h3>Benefits of Collab</h3>
+        <section id='benefits' className='landing-section'>
+          <h3 id='landing-h3'>Benefits of Collab</h3>
           <div className='flex'>
             <div id='landing-card' className='flex-1'>
               <i className='far fa-comments fa-7x'></i>
@@ -73,7 +73,7 @@ class Landing extends Component {
             </div>
           </div>
         </section>
-        <section id='features' className='landing'>
+        <section id='features' className='landing-section'>
           <h3>Features of Collab</h3>
           <div className='flex'>
             <div id='landing-card' className='flex-1'>
