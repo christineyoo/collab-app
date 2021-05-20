@@ -14,7 +14,7 @@ class AllPosts extends Component {
           <header className='all-posts'>
             <h1>All Posts</h1>
             <h2>
-              Viewing recent posts from your Collabmates. Select a course to
+              Viewing all posts from your Collabmates. Select a course to
               filter posts.
             </h2>
           </header>

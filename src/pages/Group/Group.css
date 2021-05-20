@@ -20,6 +20,10 @@
   padding-top: 30%;
 }
 
+#group-bg {
+  background-image: url('../../images/books.png');
+}
+
 @media all and (min-width: 800px) {
   .group {
     padding-top: 10%;
