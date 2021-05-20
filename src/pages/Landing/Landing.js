@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
-import HomeNav from '../../Organisms/Nav/HomeNav.js';
 // import featurePicture1 from './algebra-course.png';
 // import featurePicture2 from './ids-course.png';
 
@@ -30,7 +29,6 @@ class Landing extends Component {
   render() {
     return (
       <>
-        {/* <HomeNav /> */}
         <header id='landing-header' className='landing'>
           <h1 id='landing-h1'>Collaborate better.</h1>
           <h2 id='landing-h2'>
