@@ -139,7 +139,7 @@ class AddPost extends Component {
             <UserNav />
             <div className='add-post'>
               <header className='header'>
-                <h1 id='add-post-h1'>Add a new post</h1>
+                <h1 id='add-post-h1'>Add a new post</h1><br />
                 <form onSubmit={(e) => this.handleSubmit(e, context.addPost)}>
                   <div className='field'>
                     <label htmlFor='title'>Title</label>
@@ -198,7 +198,7 @@ class AddPost extends Component {
                     <ValidationError message={this.validateAuthor()} />
                   )}
                   <br />
-                  <button type='submit'>Add Post</button>
+                  <button id='add-post-button' type='submit'>Add Post</button>
                 </form>
               </header>
             </div>

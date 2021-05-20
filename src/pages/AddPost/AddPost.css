@@ -10,6 +10,15 @@
   margin: 5%;
 }
 
+#add-post-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#add-post-button:hover {
+  background-color: transparent;
+}
+
 #add-post-h1 {
   padding-top: 35%;
 }
