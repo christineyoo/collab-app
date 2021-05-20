@@ -33,21 +33,20 @@ class Landing extends Component {
         <HomeNav />
           <header className='landing-header'>
             <h1 id='landing-h1'>Collaborate better.</h1>
-            <h2>
+            <h2 id='landing-h2'>
               Collab is a productivity app that helps teachers increase their
               efficacy by enabling intra- and inter-collaboration amongst course
-              teams. <br /> Because when we collaborate better, we teach
-              better... and students learn better.
+              teams.
             </h2>
-            <button>
+            <button id='landing-button'>
               <Link to='all-posts'>Explore Collab</Link>
             </button>
           </header>
 
-          <section className='landing'>
+          <section id='benefits' className='landing'>
             <h3>Benefits of Collab</h3>
             <div className='flex'>
-              <div className='flex-1'>
+              <div id='landing-card' className='flex-1'>
                 <i className='far fa-comments fa-7x'></i>
                 <h4>Easy to use</h4>
                 <p>
@@ -55,7 +54,7 @@ class Landing extends Component {
                   through your inbox (no offense, email).
                 </p>
               </div>
-              <div className='flex-1'>
+              <div id='landing-card' className='flex-1'>
                 <i className='fas fa-users fa-7x'></i>
                 <h4>Stay connected</h4>
                 <p>
@@ -64,7 +63,7 @@ class Landing extends Component {
                 </p>
               </div>
 
-              <div className='flex-1'>
+              <div id='landing-card' className='flex-1'>
                 <i className='fas fa-arrows-alt-v fa-7x'></i>
                 <h4>Vertical alignment</h4>
                 <p>
@@ -77,7 +76,7 @@ class Landing extends Component {
           <section id='features' className='landing'>
             <h3>Features of Collab</h3>
             <div className='flex'>
-              <div className='flex-1'>
+              <div id='landing-card' className='flex-1'>
                 <h4>Simple interface</h4>
                 <p>
                   Skip the searching and scrolling. All the info you need is
@@ -92,7 +91,7 @@ class Landing extends Component {
             <br />
             <div className='flex'>
               {this.renderPicture()}
-              <div className='flex-1'>
+              <div id='landing-card' className='flex-1'>
                 <h4>Team view</h4>
                 <p>
                   Effectively plan your lessons for vertical alignment by

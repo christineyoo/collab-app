@@ -1,25 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+#bg {
+  background-image: url(../../images/books.png);
+}
 
 .flex-container {
   display: flex;
   flex-direction: column;
 }
 
-.all-posts{
+.all-posts {
   padding-top: 10%;
   font-family: 'Abril Fatface', cursive;
-
-}
-
-header {
-  background-image: url(../../images/collab-coffee-bg.png);
 }
 
 @media all and (min-width: 800px) {
-  .all-posts{
+  .all-posts {
     padding-top: 6%;
     font-size: 2rem;
-  font-family: 'Abril Fatface', cursive;
+    font-family: 'Abril Fatface', cursive;
   }
 
   .flex-container {

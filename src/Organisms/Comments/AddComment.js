@@ -19,7 +19,7 @@ class AddComment extends Component {
   inputContent = (content) => {
     this.setState({
       content: {
-        value: content
+        value: 'content'
       }
     });
   };
@@ -72,7 +72,7 @@ class AddComment extends Component {
               name='comment'
               rows='1'
               cols='50'
-              onChange={(e) => this.inputContent(e.target.value)}
+              // onChange={(e) => this.inputContent(e.target.value)}
               placeholder='Leave a comment...'
               required
             ></textarea>

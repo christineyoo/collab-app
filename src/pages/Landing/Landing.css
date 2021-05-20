@@ -39,6 +39,20 @@ h3 {
   color: #333333;
 }
 
+#landing-h2 {
+  margin: 5% 10% 0 10%;
+}
+
+#landing-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+#landing-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  padding: 1rem;
+}
 nav {
   position: fixed;
   top: 0;
@@ -47,9 +61,11 @@ nav {
 }
 
 .landing-header {
-  padding: 20% 10% 8% 10%;
+  padding: 10% 10% 8% 10%;
   background-image: url('../../images/plants-bg.png');
-  background-position: 85% 90%;
+  background-position: 85% 60%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
 .responsive {
@@ -59,12 +75,21 @@ nav {
 
 section .landing {
   min-height: 200px;
-  background-color: #b13c47;
   padding: 6% 0;
 }
 
-section #features {
-  background-color: #e79686;
+#benefits {
+  background-image: url('../../images/cactus.png');
+  background-position: 50% 0%;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+
+#features {
+  background-image: url('../../images/art.png');
+  background-position: 50% 0%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
 @media all and (min-width: 800px) {
@@ -75,6 +100,10 @@ section #features {
 
   #landing-h1 {
     font-size: 4.5rem;
+  }
+
+  #landing-h2 {
+    margin: 0 25%;
   }
 
   header .landing {

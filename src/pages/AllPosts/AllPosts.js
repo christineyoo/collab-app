@@ -10,6 +10,7 @@ class AllPosts extends Component {
     return (
       <>
         <UserNav />
+        <div id='bg'>
           <header className='all-posts'>
             <h1 className='all-posts'>All Posts</h1>
             <h2>
@@ -25,7 +26,7 @@ class AllPosts extends Component {
               <Posts />
             </div>
           </div>
-
+        </div>
         <Footer />
       </>
     );
