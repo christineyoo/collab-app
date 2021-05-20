@@ -2,6 +2,11 @@
   padding-top: 30%;
 }
 
+#post-details-bg {
+  background-image: url('../../images/books.png');
+
+}
+
 @media all and (min-width: 800px) {
   #post-details-h1 {
     padding-top: 10%;

@@ -32,20 +32,24 @@ class PostDetails extends Component {
     });
     return formattedFilteredPost;
   };
+
   render() {
     return (
       <>
         <UserNav />
-        <header className='post-details'>
-          <h1 id='post-details-h1'>Post Details</h1>
-          <h2>Stay in the loop by following comment threads.</h2>
-        </header>
-        <div className='flex-container'>
-          <div className='flex-1'>
-            <SideBar />
+        <div id='post-details-bg'>
+          <header className='post-details'>
+            <h1 id='post-details-h1'>Post Details</h1>
+            <h2>Stay in the loop by following comment threads.</h2>
+          </header>
+          <div className='flex-container'>
+            <div className='flex-1'>
+              <SideBar />
+            </div>
+            <div className='flex-3'>{this.displayPost()}</div>
           </div>
-          <div className='flex-3'>{this.displayPost()}</div>
         </div>
+
         <Footer />
       </>
     );
