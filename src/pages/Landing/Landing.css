@@ -30,6 +30,8 @@ p {
 h3 {
   font-size: 2.5rem;
   color: #333333;
+  margin: 0;
+  padding: 10%;
 }
 
 #landing-h1 {
@@ -52,7 +54,9 @@ h3 {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
   padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -64,8 +68,7 @@ nav {
   padding: 10% 10% 8% 10%;
   background-image: url('../../images/plants-bg.png');
   background-position: 85% 60%;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-repeat: repeat-x;
 }
 
 .responsive {
@@ -109,5 +112,9 @@ section .landing {
   header .landing {
     padding: 7% 0 7% 0;
     background-position: 50% 95%;
+  }
+
+  h3 {
+  padding: 5%;
   }
 }
