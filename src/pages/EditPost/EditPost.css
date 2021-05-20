@@ -7,6 +7,26 @@
   margin: 5%;
 }
 
+#edit-post-bg {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-image: url('../../images/coffee.png');
+  background-position: 100% 100%;
+}
+
+#edit-post-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#edit-post-button:hover {
+  background-color: transparent;
+}
+
+#edit-post-h1 {
+  padding-top: 35%;
+}
+
 .field {
   margin: 0 0 0.5rem 0;
 }
@@ -25,4 +45,10 @@ label {
 
 textarea {
   max-width: 95%;
+}
+
+@media all and (min-width: 800px) {
+  #edit-post-h1 {
+    padding-top: 10%;
+  }
 }

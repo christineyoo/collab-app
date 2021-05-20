@@ -128,7 +128,7 @@ class EditPost extends Component {
         return res.json();
       })
       .then((data) => {
-        this.props.history.push(`/all-posts`);
+        this.props.history.push(`/post/${postId}`);
         editPostCb(data, postTitle, postContent, postGroup, postAuthor, postModified);
       });
   };
@@ -137,11 +137,11 @@ class EditPost extends Component {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <div>
+          <div id='edit-post-bg'>
             <UserNav />
             <div className='add-post'>
               <header className='header'>
-                <h1>Edit post</h1>
+                <h1 id='edit-post-h1'>Edit post</h1><br />
                 <form
                   onSubmit={(e) =>
                     this.handleEdit(
@@ -212,7 +212,7 @@ class EditPost extends Component {
                     <ValidationError message={this.validateAuthor()} />
                   )}
                   <br />
-                  <button type='submit'>Save</button>
+                  <button id='edit-post-button' type='submit'>Save</button>
                 </form>
               </header>
             </div>
