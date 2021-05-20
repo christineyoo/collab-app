@@ -12,7 +12,10 @@ class MiniPost extends Component {
             <h1 className='post-title'>{this.props.post_name}</h1>
           </Link>
           <p>
-            Team: <FindGroupName group_id={this.props.group_id} />
+            Team:{' '}
+            <strong>
+              <FindGroupName group_id={this.props.group_id} />
+            </strong>
           </p>
           <p>
             {this.props.content.substring(0, 100)}
