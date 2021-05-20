@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -51,6 +52,10 @@ header .landing {
 
 #landing-h3 {
   padding: 10% 0;
+}
+
+i {
+  font-family: 'Playfair Display', serif;
 }
 
 #landing-button {

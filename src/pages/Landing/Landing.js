@@ -44,7 +44,9 @@ class Landing extends Component {
         </header>
 
         <section id='benefits' className='landing-section'>
-          <h3 id='landing-h3'>Benefits of Collab</h3>
+          <h3 id='landing-h3'>
+            <i>Benefits of Collab</i>
+          </h3>
           <div className='flex'>
             <div id='landing-card' className='flex-1'>
               <i className='far fa-comments fa-7x'></i>
@@ -74,7 +76,9 @@ class Landing extends Component {
           </div>
         </section>
         <section id='features' className='landing-section'>
-          <h3>Features of Collab</h3>
+          <h3>
+            <i>Features of Collab</i>
+          </h3>
           <div className='flex'>
             <div id='landing-card' className='flex-1'>
               <h4>Simple interface</h4>

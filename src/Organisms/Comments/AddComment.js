@@ -19,7 +19,7 @@ class AddComment extends Component {
   inputContent = (content) => {
     this.setState({
       content: {
-        value: 'content'
+        value: content
       }
     });
   };
@@ -62,8 +62,10 @@ class AddComment extends Component {
       <ApiContext.Consumer>
         {(context) => (
           <form
+            id='add-commment-form'
             className='comment-card flex'
             onSubmit={(e) => this.handleSubmit(e, context.addComment)}
+            style={{ margin: '0 20%' }}
           >
             <label htmlFor='comment'></label>
             <textarea
@@ -72,11 +74,15 @@ class AddComment extends Component {
               name='comment'
               rows='1'
               cols='50'
-              // onChange={(e) => this.inputContent(e.target.value)}
+              onChange={(e) => this.inputContent(e.target.value)}
               placeholder='Leave a comment...'
               required
-            ></textarea>
-            <button className='add-comment flex-1' type='submit'>
+            ></textarea><br />
+            <button
+              id='add-comment-button'
+              className='add-comment flex-1'
+              type='submit'
+            >
               Submit
             </button>
           </form>
