@@ -17,8 +17,9 @@ class Group extends Component {
               <FindGroupName group_id={this.props.match.params.groupId} />
             </h1>
             <h2>
-              Viewing recent posts from{' '}
+              Viewing posts from{' '}
               <FindGroupName group_id={this.props.match.params.groupId} />
+              {' '}teachers
             </h2>
           </header>
           <div className='flex-container'>

@@ -40,7 +40,7 @@ class PostDetails extends Component {
         <div id='post-details-bg'>
           <header className='post-details'>
             <h1 id='post-details-h1'>Post Details</h1>
-            <h2>Stay in the loop by following comment threads.</h2>
+            <h2>View a post's full content, delete, edit, or comment on a post. </h2>
           </header>
           <div className='flex-container'>
             <div className='flex-1'>
