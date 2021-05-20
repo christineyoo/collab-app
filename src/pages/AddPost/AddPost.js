@@ -127,7 +127,14 @@ class AddPost extends Component {
       })
       .then((data) => {
         this.props.history.push('/all-posts');
-        addPostCb(data, postTitle, postContent, postGroup, postAuthor, postModified);
+        addPostCb(
+          data,
+          postTitle,
+          postContent,
+          postGroup,
+          postAuthor,
+          postModified
+        );
       });
   };
 
@@ -135,75 +142,80 @@ class AddPost extends Component {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <div id='add-post-bg'>
+          <>
             <UserNav />
-            <div className='add-post'>
-              <header className='header'>
-                <h1 id='add-post-h1'>Add a new post</h1><br />
-                <form onSubmit={(e) => this.handleSubmit(e, context.addPost)}>
-                  <div className='field'>
-                    <label htmlFor='title'>Title</label>
-                    <br />
-                    <input
-                      id='title'
-                      type='text'
-                      name='title'
-                      onChange={(e) => this.inputPostName(e.target.value)}
-                      required
-                    />
-                  </div>
+            <div id='add-post-bg'>
+              <div className='add-post'>
+                <header className='header'>
+                  <h1 id='add-post-h1'>Add a new post</h1>
                   <br />
-                  {this.state.title.touched && (
-                    <ValidationError message={this.validateTitle()} />
-                  )}
-                  <div className='field'>
-                    <label htmlFor='content'>Content</label>
+                  <form onSubmit={(e) => this.handleSubmit(e, context.addPost)}>
+                    <div className='field'>
+                      <label htmlFor='title'>Title</label>
+                      <br />
+                      <input
+                        id='title'
+                        type='text'
+                        name='title'
+                        onChange={(e) => this.inputPostName(e.target.value)}
+                        required
+                      />
+                    </div>
                     <br />
-                    <textarea
-                      id='content'
-                      name='content'
-                      rows='15'
-                      cols='100'
-                      onChange={(e) => this.inputContent(e.target.value)}
-                    ></textarea>
-                  </div>
-                  <br />
-                  {this.state.content.touched && (
-                    <ValidationError message={this.validateContent()} />
-                  )}
-                  <div className='field'>
-                    <label htmlFor='groups'>Group</label>
+                    {this.state.title.touched && (
+                      <ValidationError message={this.validateTitle()} />
+                    )}
+                    <div className='field'>
+                      <label htmlFor='content'>Content</label>
+                      <br />
+                      <textarea
+                        id='content'
+                        name='content'
+                        rows='15'
+                        cols='100'
+                        onChange={(e) => this.inputContent(e.target.value)}
+                      ></textarea>
+                    </div>
                     <br />
-                    <select
-                      name='group'
-                      id='group'
-                      onChange={(e) => this.inputGroup(e.target.value)}
-                    >
-                      {this.renderOptions()}
-                    </select>
-                  </div>
-                  <br />
-                  <div className='field'>
-                    <label htmlFor='names'>Author</label>
+                    {this.state.content.touched && (
+                      <ValidationError message={this.validateContent()} />
+                    )}
+                    <div className='field'>
+                      <label htmlFor='groups'>Group</label>
+                      <br />
+                      <select
+                        name='group'
+                        id='group'
+                        onChange={(e) => this.inputGroup(e.target.value)}
+                      >
+                        {this.renderOptions()}
+                      </select>
+                    </div>
                     <br />
-                    <input
-                      id='name'
-                      type='text'
-                      name='name'
-                      onChange={(e) => this.inputAuthor(e.target.value)}
-                      required
-                    />
-                  </div>
-                  {this.state.author.touched && (
-                    <ValidationError message={this.validateAuthor()} />
-                  )}
-                  <br />
-                  <button id='add-post-button' type='submit'>Add Post</button>
-                </form>
-              </header>
+                    <div className='field'>
+                      <label htmlFor='names'>Author</label>
+                      <br />
+                      <input
+                        id='name'
+                        type='text'
+                        name='name'
+                        onChange={(e) => this.inputAuthor(e.target.value)}
+                        required
+                      />
+                    </div>
+                    {this.state.author.touched && (
+                      <ValidationError message={this.validateAuthor()} />
+                    )}
+                    <br />
+                    <button id='add-post-button' type='submit'>
+                      Add Post
+                    </button>
+                  </form>
+                </header>
+              </div>
             </div>
             <Footer />
-          </div>
+          </>
         )}
       </ApiContext.Consumer>
     );

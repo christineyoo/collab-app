@@ -61,13 +61,6 @@ h3 {
   margin: 0 1rem 1rem 1rem;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .landing-header {
   padding: 20% 10% 8% 10%;
   background-image: url('../../images/plants-bg.png');

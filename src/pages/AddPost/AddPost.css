@@ -1,13 +1,13 @@
 #add-post-bg {
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-image: url('../../images/coffee.png');
+  background-image: url(../../images/coffee.png);
   background-position: 100% 100%;
 }
 
 .add-post {
   text-align: left;
-  margin: 5%;
+  margin: 0 5%;
 }
 
 #add-post-button {
