@@ -30,7 +30,7 @@ class Landing extends Component {
   render() {
     return (
       <>
-        <HomeNav />
+        {/* <HomeNav /> */}
         <header id='landing-header' className='landing'>
           <h1 id='landing-h1'>Collaborate better.</h1>
           <h2 id='landing-h2'>
