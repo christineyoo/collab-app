@@ -9,15 +9,19 @@
 }
 
 .all-posts {
-  padding-top: 10%;
+  padding: 20% 0 10% 0;
+}
+
+h1 {
+  margin-bottom: 0;
   font-family: 'Abril Fatface', cursive;
+  font-weight: 1;
 }
 
 @media all and (min-width: 800px) {
   .all-posts {
-    padding-top: 6%;
+    padding: 5% 0 5% 0;
     font-size: 2rem;
-    font-family: 'Abril Fatface', cursive;
   }
 
   .flex-container {

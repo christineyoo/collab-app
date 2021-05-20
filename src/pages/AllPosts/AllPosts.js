@@ -12,7 +12,7 @@ class AllPosts extends Component {
         <UserNav />
         <div id='bg'>
           <header className='all-posts'>
-            <h1 className='all-posts'>All Posts</h1>
+            <h1>All Posts</h1>
             <h2>
               Viewing recent posts from your Collabmates. Select a course to
               filter posts.
