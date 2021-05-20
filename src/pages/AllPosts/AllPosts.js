@@ -3,13 +3,11 @@ import './AllPosts.css';
 import Footer from '../../Organisms/Footer/Footer.js';
 import Posts from '../../Organisms/Posts/Posts.js';
 import SideBar from '../../Organisms/SideBar/SideBar.js';
-import UserNav from '../../Organisms/Nav/UserNav.js';
 
 class AllPosts extends Component {
   render() {
     return (
       <>
-        <UserNav />
         <div id='bg'>
           <header className='all-posts'>
             <h1>All Posts</h1>

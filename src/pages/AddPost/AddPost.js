@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './AddPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
 import PropTypes from 'prop-types';
-import UserNav from '../../Organisms/Nav/UserNav.js';
 import ValidationError from '../../ValidationError/ValidationError';
 
 class AddPost extends Component {
@@ -143,8 +143,14 @@ class AddPost extends Component {
       <ApiContext.Consumer>
         {(context) => (
           <>
-            <UserNav />
             <div id='add-post-bg'>
+              <Link
+                to={'/all-posts'}
+              >
+                <span id='add-post-button'>
+                  {'Go Back'}
+                </span>
+              </Link>
               <div className='add-post'>
                 <header className='header'>
                   <h1 id='add-post-h1'>Add a new post</h1>

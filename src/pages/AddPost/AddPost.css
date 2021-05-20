@@ -14,10 +14,13 @@
 #add-post-button {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 #add-post-button:hover {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #add-post-h1 {

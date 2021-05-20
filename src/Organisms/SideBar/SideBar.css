@@ -1,11 +1,20 @@
 .group-card {
-  border: 1px solid #333333;
   border-radius: 5px;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .group-card:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#group-add-post,
+#group-all-posts {
+  background-color: rgba(242, 228, 231, 0.7);
+}
+
+#group-add-post:hover,
+#group-all-posts:hover {
+  background-color: rgba(242, 228, 231, 1);
 }

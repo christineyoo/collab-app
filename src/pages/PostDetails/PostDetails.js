@@ -3,7 +3,6 @@ import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
 import Post from '../../Molecules/Post/Post';
 import SideBar from '../../Organisms/SideBar/SideBar.js';
-import UserNav from '../../Organisms/Nav/UserNav.js';
 import './PostDetails.css';
 
 class PostDetails extends Component {
@@ -36,7 +35,6 @@ class PostDetails extends Component {
   render() {
     return (
       <>
-        <UserNav />
         <div id='post-details-bg'>
           <header className='post-details'>
             <h1 id='post-details-h1'>Post Details</h1>

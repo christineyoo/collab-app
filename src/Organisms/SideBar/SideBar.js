@@ -12,29 +12,45 @@ class SideBar extends Component {
 
     const sideBar = copyGroups.map((group, i) => {
       return (
-        <div className='group-card' key={i}>
-          <NavLink
-            to={`/group/${group.id}`}
-            activeStyle={{
-              fontStyle: 'bold',
-              color: '#33333',
-              fontWeight: '900',
-            }}
-          >
+        <NavLink
+          to={`/group/${group.id}`}
+          activeStyle={{
+            fontStyle: 'bold',
+            color: '#494158',
+            fontWeight: '900'
+          }}
+        >
+          <div className='group-card' key={i}>
             {group.group_name}
-          </NavLink>
-        </div>
+          </div>
+        </NavLink>
       );
     });
     return sideBar;
   };
 
   render() {
-    return (
-      <>
-        {this.displaySideBar()}
-      </>
-    );
+    return <>
+    <NavLink to={'/all-posts'} activeStyle={{
+            fontStyle: 'bold',
+            color: '#494158',
+            fontWeight: '900'
+          }}>
+            <div id='group-all-posts' className='group-card'>
+            {'All Posts'}
+            </div>
+          </NavLink>
+    {this.displaySideBar()}
+      <NavLink to={'/add-post'} activeStyle={{
+            fontStyle: 'bold',
+            color: '#494158',
+            fontWeight: '900'
+          }}>
+            <div id='group-add-post' className='group-card'>
+            {' + Add a Post'}
+            </div>
+          </NavLink>
+    </>;
   }
 }
 

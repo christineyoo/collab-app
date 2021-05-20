@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './EditPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
 import PropTypes from 'prop-types';
-import UserNav from '../../Organisms/Nav/UserNav.js';
 import ValidationError from '../../ValidationError/ValidationError';
 
 class EditPost extends Component {
@@ -145,8 +145,10 @@ class EditPost extends Component {
       <ApiContext.Consumer>
         {(context) => (
           <>
-            <UserNav />
             <div id='edit-post-bg'>
+              <Link to={`/post/${this.props.location.post_id}`}>
+                <span id='add-post-button'>{'Cancel'}</span>
+              </Link>
               <div className='add-post'>
                 <header className='header'>
                   <h1 id='edit-post-h1'>Edit post</h1>
