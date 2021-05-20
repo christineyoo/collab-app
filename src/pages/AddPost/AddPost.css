@@ -1,8 +1,9 @@
 #add-post-bg {
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-image: url(../../images/coffee.png);
-  background-position: 100% 100%;
+  background: url(../../images/coffee.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .add-post {

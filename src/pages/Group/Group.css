@@ -22,7 +22,11 @@
 }
 
 #group-bg {
-  background-image: url('../../images/books.png');
+  background: url(../../images/books.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @media all and (min-width: 800px) {

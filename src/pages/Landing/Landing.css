@@ -69,14 +69,6 @@ header .landing {
   margin: 0 1rem 1rem 1rem;
 }
 
-/* #landing-header {
-  padding: 20% 10% 8% 10%;
-  background-image: url(../../images/plants-bg.png);
-  background-position: 50% 100%;
-  background-size: auto 100%;
-  background-repeat: repeat-x;
-} */
-
 #landing-header {
   background: url(../../images/plants-bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -124,7 +116,7 @@ header .landing {
   }
 
   header .landing {
-    padding: 15% 0;
+    padding: 12% 0;
     background-position: 50% 95%;
   }
 
