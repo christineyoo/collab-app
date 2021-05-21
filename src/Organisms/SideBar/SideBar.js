@@ -6,13 +6,13 @@ import './SideBar.css';
 class SideBar extends Component {
   static contextType = ApiContext;
 
-  // Returns the nav bar for the "/" and "/folder" routes
   displaySideBar = () => {
     const copyGroups = this.context.groups || [];
 
     const sideBar = copyGroups.map((group, i) => {
       return (
         <NavLink
+        key={i}
           to={`/group/${group.id}`}
           activeStyle={{
             fontStyle: 'bold',

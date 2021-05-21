@@ -3,9 +3,10 @@ import './App.css';
 import AddPost from './Pages/AddPost/AddPost';
 import AllPosts from './Pages/AllPosts/AllPosts';
 import ApiContext from './ApiContext';
+import CollabError from './CollabError';
 import Group from './Pages/Group/Group';
 import Landing from './Pages/Landing/Landing';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
 import PostDetails from './Pages/PostDetails/PostDetails';
 import ScrollToTop from './ScrollToTop';
@@ -158,22 +159,26 @@ class App extends Component {
     };
 
     return (
-      <main className='App'>
-        <header>
-          <ApiContext.Provider value={contextValue}>
-            <ScrollToTop />
-            <Switch>
-              <Route exact path='/all-posts' component={AllPosts} />
-              <Route exact path='/add-post' component={AddPost} />
-              <Route path='/group/:groupId' component={Group} />
-              <Route path='/post/:postId/edit' component={EditPost} />
-              <Route path='/post/:postId' component={PostDetails} />
-              <Route exact path='/' component={Landing} />
-              <Route component={NotFound} />
-            </Switch>
-          </ApiContext.Provider>
-        </header>
-      </main>
+      <Router>
+        <main className='App'>
+          <header>
+            <ApiContext.Provider value={contextValue}>
+              <ScrollToTop />
+              <CollabError>
+                <Switch>
+                  <Route exact path='/all-posts' component={AllPosts} />
+                  <Route exact path='/add-post' component={AddPost} />
+                  <Route path='/group/:groupId' component={Group} />
+                  <Route path='/post/:postId/edit' component={EditPost} />
+                  <Route path='/post/:postId' component={PostDetails} />
+                  <Route exact path='/' component={Landing} />
+                  <Route component={NotFound} />
+                </Switch>
+              </CollabError>
+            </ApiContext.Provider>
+          </header>
+        </main>
+      </Router>
     );
   }
 }

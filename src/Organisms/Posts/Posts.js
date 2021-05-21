@@ -12,9 +12,10 @@ class Posts extends Component {
     if (this.props.isOnGroup) {
       return copyPosts
         .filter((post) => post.group_id === +this.props.group_id)
-        .map((post) => {
+        .map((post, i) => {
           return (
             <MiniPost
+              key={i}
               author={post.author}
               content={post.content}
               modified={post.modified}
@@ -25,9 +26,10 @@ class Posts extends Component {
           );
         });
     } else {
-      return copyPosts.map((post) => {
+      return copyPosts.map((post, i) => {
         return (
           <MiniPost
+            key={i}
             author={post.author}
             content={post.content}
             modified={post.modified}
