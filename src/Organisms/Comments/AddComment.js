@@ -22,6 +22,7 @@ class AddComment extends Component {
         value: content
       }
     });
+    return content;
   };
 
   handleSubmit = (event, addCommentCb) => {
@@ -49,8 +50,7 @@ class AddComment extends Component {
         return res.json();
       })
       .then((data) => {
-        // window.location.reload();
-        // this.props.history.push(`/post/${commentPostId}`);
+        this.setState({ content: { value: '' } });
         addCommentCb(data, commentContent, commentAuthor, commentPostId);
       });
   };
@@ -74,8 +74,10 @@ class AddComment extends Component {
               name='comment'
               onChange={(e) => this.inputContent(e.target.value)}
               placeholder='Leave a comment...'
+              value={this.state.content.value}
               required
-            ></input><br />
+            ></input>
+            <br />
             <button
               id='add-comment-button'
               className='add-comment flex-1'

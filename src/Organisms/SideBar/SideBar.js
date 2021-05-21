@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './SideBar.css';
 
 class SideBar extends Component {
@@ -16,8 +16,8 @@ class SideBar extends Component {
           to={`/group/${group.id}`}
           activeStyle={{
             fontStyle: 'bold',
-            color: '#494158',
-            fontWeight: '900'
+            color: '#b13c47',
+            fontWeight: '900',
           }}
         >
           <div className='group-card' key={i}>
@@ -33,23 +33,19 @@ class SideBar extends Component {
     return <>
     <NavLink to={'/all-posts'} activeStyle={{
             fontStyle: 'bold',
-            color: '#494158',
-            fontWeight: '900'
+            color: '#b13c47',
+            fontWeight: '900',
           }}>
             <div id='group-all-posts' className='group-card'>
             {'All Posts'}
             </div>
           </NavLink>
     {this.displaySideBar()}
-      <NavLink to={'/add-post'} activeStyle={{
-            fontStyle: 'bold',
-            color: '#494158',
-            fontWeight: '900'
-          }}>
+      <Link to={'/add-post'}>
             <div id='group-add-post' className='group-card'>
             {' + Add a Post'}
             </div>
-          </NavLink>
+          </Link>
     </>;
   }
 }

@@ -28,7 +28,7 @@
 }
 
 #add-post-h1 {
-  padding: 10% 0 10% 0;
+  padding: 10% 0 2% 0;
 }
 
 .field {
@@ -49,10 +49,4 @@ label {
 
 textarea {
   max-width: 95%;
-}
-
-@media all and (min-width: 800px) {
-  #add-post-h1 {
-    padding-top: 10%;
-  }
 }
