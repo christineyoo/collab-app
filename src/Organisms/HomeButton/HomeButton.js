@@ -5,8 +5,8 @@ import './HomeButton.css';
 class HomeButton extends Component {
   render() {
     return (
-      <nav id='nav' className='nav'>
-        <Link exact to='/'>
+      <nav>
+        <Link id='nav' exact to='/'>
           Collab
         </Link>
       </nav>

@@ -75,7 +75,7 @@ class Landing extends Component {
           </div>
         </section>
         <section id='features' className='landing-section'>
-          <h3>
+          <h3 id='landing-h3'>
             <i>Features of Collab</i>
           </h3>
           <div className='flex'>
@@ -99,11 +99,10 @@ class Landing extends Component {
           <img src={featurePicture2} alt='groups' className='responsive' />
         </div>
             <div id='landing-card' className='flex-1'>
-              <h4>Edit your posts</h4>
+              <h4>Edit with ease</h4>
               <p>
                 Made a typo in your message? Sent a message to the wrong group?
-                No worries. Edit your posts with ease and update them just like
-                that.
+                No worries. Edit your posts to how you want them with just a few clicks.
               </p>
             </div>
           </div>

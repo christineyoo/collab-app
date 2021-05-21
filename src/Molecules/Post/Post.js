@@ -79,12 +79,7 @@ class Post extends Component {
                 <button className='comment-option'>Edit Post</button>
               </Link>
               <br />
-              <i
-                className={
-                  !this.state.areCommentsVisible
-                    ? 'fas fa-chevron-down'
-                    : 'fas fa-chevron-up'
-                }
+              <strong id='comment'
                 onClick={() => {
                   return this.setState({
                     areCommentsVisible: !this.state.areCommentsVisible
@@ -93,9 +88,9 @@ class Post extends Component {
               >
                 &nbsp;{' '}
                 {this.state.areCommentsVisible
-                  ? <span id='font'>{'Hide Comments'}</span>
-                  : <span id='font'>{'Show Comments'}</span>}
-              </i>
+                  ? <span id='font'>{'- Hide Comments'}</span>
+                  : <span id='font'>{'+ Show Comments'}</span>}
+              </strong>
             </div>
             {this.state.areCommentsVisible && (
               <Comments post_id={this.props.match.params.postId} />
