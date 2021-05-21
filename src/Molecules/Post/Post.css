@@ -29,10 +29,6 @@ div .post {
   font-size: 2rem;
 }
 
-.post:hover {
-  color: #468b78;
-}
-
 @media all and (min-width: 800px) {
   .comment-option {
     padding: 0.5rem;

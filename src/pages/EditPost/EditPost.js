@@ -151,7 +151,7 @@ class EditPost extends Component {
               <Link to={`/post/${this.props.location.post_id}`}>
                 <span id='add-post-button'>{'Cancel'}</span>
               </Link>
-              <div className='add-post'>
+              <div className='edit-post'>
                 <header className='header'>
                   <h1 id='edit-post-h1'>Edit post</h1>
                   <br />
