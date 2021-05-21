@@ -68,16 +68,14 @@ class AddComment extends Component {
             style={{ margin: '0 20%' }}
           >
             <label htmlFor='comment'></label>
-            <textarea
+            <input
               id='comment'
-              className='add-comment flex-2'
+              className='add-comment flex-5'
               name='comment'
-              rows='1'
-              cols='50'
               onChange={(e) => this.inputContent(e.target.value)}
               placeholder='Leave a comment...'
               required
-            ></textarea><br />
+            ></input><br />
             <button
               id='add-comment-button'
               className='add-comment flex-1'

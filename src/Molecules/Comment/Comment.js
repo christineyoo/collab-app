@@ -27,7 +27,7 @@ class Comment extends Component {
         return res.json();
       })
       .then((data) => {
-        this.props.history.push(`/post/${this.props.post_id}`);
+        // this.props.history.push(`/post/${this.props.post_id}`);
         deleteCommentCb(commentId);
       })
       .catch((error) => {
