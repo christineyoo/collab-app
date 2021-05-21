@@ -14,7 +14,7 @@ class Post extends Component {
   static contextType = ApiContext;
 
   state = {
-    isCommentClicked: false
+    areCommentsVisible: true
   };
 
   deletePostRequest = (postId, deletePostCb) => {
@@ -81,20 +81,23 @@ class Post extends Component {
               <br />
               <i
                 className={
-                  !this.state.isCommentClicked
+                  !this.state.areCommentsVisible
                     ? 'fas fa-chevron-down'
                     : 'fas fa-chevron-up'
                 }
                 onClick={() => {
                   return this.setState({
-                    isCommentClicked: !this.state.isCommentClicked
+                    areCommentsVisible: !this.state.areCommentsVisible
                   });
                 }}
               >
-                &nbsp; See comments...
+                &nbsp;{' '}
+                {this.state.areCommentsVisible
+                  ? <span id='font'>{'Hide Comments'}</span>
+                  : <span id='font'>{'Show Comments'}</span>}
               </i>
             </div>
-            {this.state.isCommentClicked && (
+            {this.state.areCommentsVisible && (
               <Comments post_id={this.props.match.params.postId} />
             )}
           </div>

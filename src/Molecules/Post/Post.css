@@ -10,10 +10,6 @@ button,
   font-size: 1rem;
 }
 
-#post-h1 {
-  font-size: 2rem;
-}
-
 div .post {
   padding: 5%;
   margin: 0 1rem 1rem 1rem;
@@ -22,6 +18,13 @@ div .post {
   text-align: left;
 }
 
+#font {
+  font-family: Roboto;
+}
+
+#post-h1 {
+  font-size: 2rem;
+}
 .post-title:hover {
   color: #468b78;
 }
@@ -34,7 +37,7 @@ div .post {
   }
 
   div .post {
-  margin: 0 5rem 0.5rem 0.5rem;
-  padding: 2%;
+    margin: 0 5rem 0.5rem 0.5rem;
+    padding: 2%;
   }
 }
