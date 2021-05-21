@@ -64,7 +64,7 @@ i {
 }
 
 #landing-button:hover {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #landing-card {
@@ -121,7 +121,7 @@ i {
   }
 
   header .landing {
-    padding: 4% 0 15% 0;
+    padding: 10% 0 15% 0;
     background-position: 50% 95%;
   }
 

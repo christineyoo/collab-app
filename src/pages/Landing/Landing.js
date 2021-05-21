@@ -2,25 +2,26 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
-// import featurePicture1 from './algebra-course.png';
-// import featurePicture2 from './ids-course.png';
+import featurePicture1 from '../../images/collab-groups.png';
+import featurePicture2 from '../../images/collab-edit.png';
+import featurePicture3 from '../../images/collab-comment.png';
 
 class Landing extends Component {
   renderPicture = (isFeaturePicture1) => {
     if (isFeaturePicture1) {
       return (
         <div className='flex-1'>
-          {/* <img src={featurePicture1} alt='Algebra 1' className='responsive' /> */}
+          <img src={featurePicture1} alt='groups' className='responsive' />
         </div>
       );
     } else {
       return (
         <div className='flex-1'>
-          {/* <img
+          <img
             src={featurePicture2}
-            alt='Intro to Data Science'
+            alt='edit'
             className='responsive'
-          /> */}
+          />
         </div>
       );
     }
@@ -36,9 +37,9 @@ class Landing extends Component {
             efficacy by enabling intra- and inter-collaboration amongst course
             teams.
           </h2>
-          <button id='landing-button'>
-            <Link to='all-posts'>Explore Collab</Link>
-          </button>
+          <Link to='all-posts'>
+            <button id='landing-button'>Explore Collab</button>
+          </Link>
         </header>
 
         <section id='benefits' className='landing-section'>
@@ -86,19 +87,23 @@ class Landing extends Component {
                 to view and see all the relevant updates from your colleagues.
               </p>
             </div>
-            {this.renderPicture(true)}
+            <div className='flex-1'>
+          <img src={featurePicture1} alt='groups' className='responsive' />
+        </div>
           </div>
           <br />
           <br />
           <br />
           <div className='flex'>
-            {this.renderPicture()}
+          <div className='flex-1'>
+          <img src={featurePicture2} alt='groups' className='responsive' />
+        </div>
             <div id='landing-card' className='flex-1'>
-              <h4>Know what's behind and ahead</h4>
+              <h4>Edit your posts</h4>
               <p>
-                Effectively plan your lessons for vertical alignment by clicking
-                on other courses to see updates. When teachers collaborate
-                better, we teach better... and students learn better.
+                Made a typo in your message? Sent a message to the wrong group?
+                No worries. Edit your posts with ease and update them just like
+                that.
               </p>
             </div>
           </div>
@@ -115,7 +120,9 @@ class Landing extends Component {
                 'Reply'!
               </p>
             </div>
-            {this.renderPicture(true)}
+            <div className='flex-1'>
+          <img src={featurePicture3} alt='groups' className='responsive' />
+        </div>
           </div>
         </section>
         <Footer />
