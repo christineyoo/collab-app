@@ -7,7 +7,7 @@ class Footer extends Component {
       <>
         <footer className='footer-style'>
           <div className='container'>
-            <h4>Copyright &copy; 2021 Christine Yoo</h4>
+            <h4 id='footer-h4-hh'>Copyright &copy; 2021 Christine Yoo</h4>
             <ul id='footer-menu'>
               <li>
                 <i className='fab fa-linkedin-in'></i>

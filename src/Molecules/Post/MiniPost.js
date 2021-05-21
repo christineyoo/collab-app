@@ -7,25 +7,25 @@ class MiniPost extends Component {
   render() {
     return (
       <section>
-        <div className='post'>
-          <Link to={`/post/${this.props.id}`}>
+        <Link to={`/post/${this.props.id}`}>
+          <div className='post'>
             <h1 className='post-title'>{this.props.post_name}</h1>
-          </Link>
-          <p>
-            Team:{' '}
-            <strong>
-              <FindGroupName group_id={this.props.group_id} />
-            </strong>
-          </p>
-          <p>
-            {this.props.content.substring(0, 100)}
-            {'...'}
-          </p>
-          <p>
-            Posted by {this.props.author} on{' '}
-            {this.props.modified.substring(0, 10)}
-          </p>
-        </div>
+            <p>
+              Team:{' '}
+              <strong>
+                <FindGroupName group_id={this.props.group_id} />
+              </strong>
+            </p>
+            <p>
+              {this.props.content.substring(0, 100)}
+              {'...'}
+            </p>
+            <p>
+              Posted by {this.props.author} on{' '}
+              {this.props.modified.substring(0, 10)}
+            </p>
+          </div>
+        </Link>
       </section>
     );
   }

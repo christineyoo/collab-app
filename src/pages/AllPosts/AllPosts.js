@@ -13,7 +13,7 @@ class AllPosts extends Component {
             <h1>All Posts</h1>
             <h2>
               Viewing all posts from your Collabmates. Select a course to
-              filter posts.
+              filter posts.<br />Click on a post to view its details.
             </h2>
           </header>
           <div className='flex-container'>
