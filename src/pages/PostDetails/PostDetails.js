@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
+import HomeButton from '../../Organisms/HomeButton/HomeButton';
 import Post from '../../Molecules/Post/Post';
 import SideBar from '../../Organisms/SideBar/SideBar.js';
 import './PostDetails.css';
@@ -35,10 +36,13 @@ class PostDetails extends Component {
   render() {
     return (
       <>
+        <HomeButton />
         <div id='post-details-bg'>
           <header className='post-details'>
             <h1 id='post-details-h1'>Post Details</h1>
-            <h2>View a post's full content, delete, edit, or comment on a post. </h2>
+            <h2>
+              View a post's full content, delete, edit, or comment on a post.{' '}
+            </h2>
           </header>
           <div className='flex-container'>
             <div className='flex-1'>

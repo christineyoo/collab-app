@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './AllPosts.css';
 import Footer from '../../Organisms/Footer/Footer.js';
+import HomeButton from '../../Organisms/HomeButton/HomeButton';
 import Posts from '../../Organisms/Posts/Posts.js';
 import SideBar from '../../Organisms/SideBar/SideBar.js';
 
@@ -8,6 +9,7 @@ class AllPosts extends Component {
   render() {
     return (
       <>
+      <HomeButton />
         <div id='bg'>
           <header className='all-posts'>
             <h1>All Posts</h1>

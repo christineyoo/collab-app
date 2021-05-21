@@ -2,8 +2,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-
 }
 
 .App {
@@ -22,6 +20,7 @@ button {
 
 body {
   position: relative;
+  font-family: 'Roboto', sans-serif;
 }
 
 div .flex-1 {

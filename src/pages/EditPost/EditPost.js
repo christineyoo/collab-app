@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './EditPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
+import HomeButton from '../../Organisms/HomeButton/HomeButton';
 import PropTypes from 'prop-types';
 import ValidationError from '../../ValidationError/ValidationError';
 
@@ -145,6 +146,7 @@ class EditPost extends Component {
       <ApiContext.Consumer>
         {(context) => (
           <>
+          <HomeButton />
             <div id='edit-post-bg'>
               <Link to={`/post/${this.props.location.post_id}`}>
                 <span id='add-post-button'>{'Cancel'}</span>

@@ -25,6 +25,7 @@ div .post {
 #post-h1 {
   font-size: 2rem;
 }
+
 .post:hover {
   color: #468b78;
 }

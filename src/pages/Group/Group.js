@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HomeButton from '../../Organisms/HomeButton/HomeButton';
 import FindGroupName from '../../Molecules/FindGroupName/FindGroupName';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Group.css';
@@ -9,6 +10,7 @@ class Group extends Component {
   render() {
     return (
       <>
+      <HomeButton />
         <div id='group-bg'>
           <header className='group'>
             <h1>

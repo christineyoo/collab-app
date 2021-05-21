@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './AddPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
+import HomeButton from '../../Organisms/HomeButton/HomeButton';
 import PropTypes from 'prop-types';
 import ValidationError from '../../ValidationError/ValidationError';
 
@@ -143,13 +144,10 @@ class AddPost extends Component {
       <ApiContext.Consumer>
         {(context) => (
           <>
+            <HomeButton />
             <div id='add-post-bg'>
-              <Link
-                to={'/all-posts'}
-              >
-                <span id='add-post-button'>
-                  {'Go Back'}
-                </span>
+              <Link to={'/all-posts'}>
+                <span id='add-post-button'>{'Go Back'}</span>
               </Link>
               <div className='add-post'>
                 <header className='header'>
