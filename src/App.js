@@ -4,13 +4,13 @@ import AddPost from './Pages/AddPost/AddPost';
 import AllPosts from './Pages/AllPosts/AllPosts';
 import ApiContext from './ApiContext';
 import CollabError from './CollabError';
+import EditPost from './Pages/EditPost/EditPost';
 import Group from './Pages/Group/Group';
 import Landing from './Pages/Landing/Landing';
 import { Route, Switch } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
 import PostDetails from './Pages/PostDetails/PostDetails';
 import ScrollToTop from './ScrollToTop';
-import EditPost from './Pages/EditPost/EditPost';
 
 class App extends Component {
   state = {
@@ -168,21 +168,9 @@ class App extends Component {
                 <Switch>
                   <Route exact path='/all-posts' component={AllPosts} />
                   <Route exact path='/add-post' component={AddPost} />
-                  <Route
-                    path='/group/:groupId'
-                    // match={this.props.match}
-                    component={Group}
-                  />
-                  <Route
-                    path='/post/:postId/edit'
-                    // location={this.props.location}
-                    component={<EditPost />}
-                  />
-                  <Route
-                    path='/post/:postId'
-                    // match={this.props.match}
-                    component={<PostDetails />}
-                  />
+                  <Route path='/group/:groupId' component={Group} />
+                  <Route path='/post/:postId/edit' component={EditPost} />
+                  <Route path='/post/:postId' component={PostDetails} />
                   <Route exact path='/' component={Landing} />
                   <Route component={NotFound} />
                 </Switch>

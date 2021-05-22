@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './EditPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';

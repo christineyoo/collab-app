@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import FindGroupName from '../FindGroupName/FindGroupName';
 import './Post.css';
 
 class MiniPost extends Component {
   render() {
     return (
-      <Router>
+      <>
         <section>
           <Link to={`/post/${this.props.id}`}>
             <div className='post'>
@@ -28,7 +28,7 @@ class MiniPost extends Component {
             </div>
           </Link>
         </section>
-      </Router>
+      </>
     );
   }
 }

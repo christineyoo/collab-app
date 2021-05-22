@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
-import { BrowserRouter as Router, NavLink, Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './SideBar.css';
 
 class SideBar extends Component {
@@ -12,12 +12,12 @@ class SideBar extends Component {
     const sideBar = copyGroups.map((group, i) => {
       return (
         <NavLink
-        key={i}
+          key={i}
           to={`/group/${group.id}`}
           activeStyle={{
             fontStyle: 'bold',
             color: '#b13c47',
-            fontWeight: '900',
+            fontWeight: '900'
           }}
         >
           <div className='group-card' key={i}>
@@ -30,23 +30,28 @@ class SideBar extends Component {
   };
 
   render() {
-    return <Router>
-    <NavLink to={'/all-posts'} activeStyle={{
+    return (
+      <>
+        <NavLink
+          to={'/all-posts'}
+          activeStyle={{
             fontStyle: 'bold',
             color: '#b13c47',
-            fontWeight: '900',
-          }}>
-            <div id='group-all-posts' className='group-card'>
+            fontWeight: '900'
+          }}
+        >
+          <div id='group-all-posts' className='group-card'>
             {'All Posts'}
-            </div>
-          </NavLink>
-    {this.displaySideBar()}
-      <Link to={'/add-post'}>
-            <div id='group-add-post' className='group-card'>
+          </div>
+        </NavLink>
+        {this.displaySideBar()}
+        <Link to={'/add-post'}>
+          <div id='group-add-post' className='group-card'>
             {' + Add a Post'}
-            </div>
-          </Link>
-    </Router>;
+          </div>
+        </Link>
+      </>
+    );
   }
 }
 
