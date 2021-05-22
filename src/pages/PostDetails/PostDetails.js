@@ -52,7 +52,6 @@ class PostDetails extends Component {
             <div className='flex-3'>{this.displayPost()}</div>
           </div>
         </div>
-
         <Footer />
       </>
     );

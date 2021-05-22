@@ -145,7 +145,7 @@ class EditPost extends Component {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <Router>
+          <>
             <HomeButton />
             <div id='edit-post-bg'>
               <Link to={`/post/${this.props.location.post_id}`}>
@@ -233,7 +233,7 @@ class EditPost extends Component {
               </div>
             </div>
             <Footer />
-          </Router>
+          </>
         )}
       </ApiContext.Consumer>
     );
