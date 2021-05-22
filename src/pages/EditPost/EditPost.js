@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, withRouter } from 'react-router-dom';
 import './EditPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
@@ -145,8 +145,8 @@ class EditPost extends Component {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <>
-          <HomeButton />
+          <Router>
+            <HomeButton />
             <div id='edit-post-bg'>
               <Link to={`/post/${this.props.location.post_id}`}>
                 <span id='add-post-button'>{'Cancel'}</span>
@@ -233,11 +233,11 @@ class EditPost extends Component {
               </div>
             </div>
             <Footer />
-          </>
+          </Router>
         )}
       </ApiContext.Consumer>
     );
   }
 }
 
-export default EditPost;
+export default withRouter(EditPost);

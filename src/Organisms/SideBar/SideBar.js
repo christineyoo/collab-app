@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
-import { NavLink, Link } from 'react-router-dom';
+import { BrowserRouter as Router, NavLink, Link } from 'react-router-dom';
 import './SideBar.css';
 
 class SideBar extends Component {
@@ -30,7 +30,7 @@ class SideBar extends Component {
   };
 
   render() {
-    return <>
+    return <Router>
     <NavLink to={'/all-posts'} activeStyle={{
             fontStyle: 'bold',
             color: '#b13c47',
@@ -46,7 +46,7 @@ class SideBar extends Component {
             {' + Add a Post'}
             </div>
           </Link>
-    </>;
+    </Router>;
   }
 }
 

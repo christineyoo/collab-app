@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders AddPost UI as expected 1`] = `
+Array [
+  <nav>
+    <a
+      exact={true}
+      href="/"
+      id="nav"
+      onClick={[Function]}
+    >
+      Collab
+    </a>
+  </nav>,
+  <div
+    id="add-post-bg"
+  >
+    <a
+      href="/all-posts"
+      onClick={[Function]}
+    >
+      <span
+        id="add-post-button"
+      >
+        Go Back
+      </span>
+    </a>
+    <div
+      className="add-post"
+    >
+      <header
+        className="header"
+      >
+        <h1
+          id="add-post-h1"
+        >
+          Add a new post
+        </h1>
+        <br />
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="field"
+          >
+            <label
+              htmlFor="title"
+            >
+              Title
+            </label>
+            <br />
+            <input
+              id="title"
+              name="title"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </div>
+          <br />
+          <div
+            className="field"
+          >
+            <label
+              htmlFor="content"
+            >
+              Content
+            </label>
+            <br />
+            <textarea
+              cols="100"
+              id="content"
+              name="content"
+              onChange={[Function]}
+              rows="15"
+            />
+          </div>
+          <br />
+          <div
+            className="field"
+          >
+            <label
+              htmlFor="groups"
+            >
+              Group
+            </label>
+            <br />
+            <select
+              id="group"
+              name="group"
+              onChange={[Function]}
+            >
+              <option
+                value={1}
+              >
+                Algebra 1
+              </option>
+              <option
+                value={2}
+              >
+                Geometry
+              </option>
+              <option
+                value={3}
+              >
+                Algebra 2
+              </option>
+              <option
+                value={4}
+              >
+                Intro to Data Science
+              </option>
+            </select>
+          </div>
+          <br />
+          <div
+            className="field"
+          >
+            <label
+              htmlFor="names"
+            >
+              Author
+            </label>
+            <br />
+            <input
+              id="name"
+              name="name"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </div>
+          <br />
+          <button
+            id="add-post-button"
+            type="submit"
+          >
+            Add Post
+          </button>
+        </form>
+      </header>
+    </div>
+  </div>,
+  <footer
+    className="footer-style"
+  >
+    <div
+      className="container"
+    >
+      <h4
+        id="footer-h4-hh"
+      >
+        Copyright © 2021 Christine Yoo
+      </h4>
+      <ul
+        id="footer-menu"
+      >
+        <li>
+          <i
+            className="fab fa-linkedin-in"
+          />
+          <a
+            href="https://www.linkedin.com/in/christine-yoo-cy/"
+            rel="noreferrer"
+            target="_blank"
+          >
+             LinkedIn
+          </a>
+        </li>
+        <li>
+          <i
+            className="fab fa-github"
+          />
+          <a
+            href="https://github.com/christineyoo"
+            rel="noreferrer"
+            target="_blank"
+          >
+             GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>,
+]
+`;

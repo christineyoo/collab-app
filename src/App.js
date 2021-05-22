@@ -6,7 +6,7 @@ import ApiContext from './ApiContext';
 import CollabError from './CollabError';
 import Group from './Pages/Group/Group';
 import Landing from './Pages/Landing/Landing';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
 import PostDetails from './Pages/PostDetails/PostDetails';
 import ScrollToTop from './ScrollToTop';
@@ -159,7 +159,7 @@ class App extends Component {
     };
 
     return (
-      <Router>
+      <>
         <main className='App'>
           <header>
             <ApiContext.Provider value={contextValue}>
@@ -168,9 +168,21 @@ class App extends Component {
                 <Switch>
                   <Route exact path='/all-posts' component={AllPosts} />
                   <Route exact path='/add-post' component={AddPost} />
-                  <Route path='/group/:groupId' component={Group} />
-                  <Route path='/post/:postId/edit' component={EditPost} />
-                  <Route path='/post/:postId' component={PostDetails} />
+                  <Route
+                    path='/group/:groupId'
+                    // match={this.props.match}
+                    component={Group}
+                  />
+                  <Route
+                    path='/post/:postId/edit'
+                    // location={this.props.location}
+                    component={<EditPost />}
+                  />
+                  <Route
+                    path='/post/:postId'
+                    // match={this.props.match}
+                    component={<PostDetails />}
+                  />
                   <Route exact path='/' component={Landing} />
                   <Route component={NotFound} />
                 </Switch>
@@ -178,7 +190,7 @@ class App extends Component {
             </ApiContext.Provider>
           </header>
         </main>
-      </Router>
+      </>
     );
   }
 }

@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PostDetails UI as expected 1`] = `
+Array [
+  <nav>
+    <a
+      exact={true}
+      href="/"
+      id="nav"
+      onClick={[Function]}
+    >
+      Collab
+    </a>
+  </nav>,
+  <div
+    id="post-details-bg"
+  >
+    <header
+      className="post-details"
+    >
+      <h1
+        id="post-details-h1"
+      >
+        Post Details
+      </h1>
+      <h2>
+        View a post's full content, delete, edit, or comment on a post.
+         
+      </h2>
+    </header>
+    <div
+      className="flex-container"
+    >
+      <div
+        className="flex-1"
+      >
+        <a
+          aria-current={null}
+          href="/all-posts"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+            id="group-all-posts"
+          >
+            All Posts
+          </div>
+        </a>
+        <a
+          aria-current={null}
+          href="/group/1"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+          >
+            Algebra 1
+          </div>
+        </a>
+        <a
+          aria-current={null}
+          href="/group/2"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+          >
+            Geometry
+          </div>
+        </a>
+        <a
+          aria-current={null}
+          href="/group/3"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+          >
+            Algebra 2
+          </div>
+        </a>
+        <a
+          aria-current={null}
+          href="/group/4"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+          >
+            Intro to Data Science
+          </div>
+        </a>
+        <a
+          href="/add-post"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+            id="group-add-post"
+          >
+             + Add a Post
+          </div>
+        </a>
+      </div>
+      <div
+        className="flex-3"
+      />
+    </div>
+  </div>,
+  <footer
+    className="footer-style"
+  >
+    <div
+      className="container"
+    >
+      <h4
+        id="footer-h4-hh"
+      >
+        Copyright © 2021 Christine Yoo
+      </h4>
+      <ul
+        id="footer-menu"
+      >
+        <li>
+          <i
+            className="fab fa-linkedin-in"
+          />
+          <a
+            href="https://www.linkedin.com/in/christine-yoo-cy/"
+            rel="noreferrer"
+            target="_blank"
+          >
+             LinkedIn
+          </a>
+        </li>
+        <li>
+          <i
+            className="fab fa-github"
+          />
+          <a
+            href="https://github.com/christineyoo"
+            rel="noreferrer"
+            target="_blank"
+          >
+             GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>,
+]
+`;

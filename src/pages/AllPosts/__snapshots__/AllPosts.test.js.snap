@@ -1,0 +1,598 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders AllPosts UI as expected 1`] = `
+Array [
+  <nav>
+    <a
+      exact={true}
+      href="/"
+      id="nav"
+      onClick={[Function]}
+    >
+      Collab
+    </a>
+  </nav>,
+  <div
+    id="bg"
+  >
+    <header
+      className="all-posts"
+    >
+      <h1>
+        All Posts
+      </h1>
+      <h2>
+        Viewing all posts from your Collabmates. Select a course to filter posts.
+      </h2>
+    </header>
+    <div
+      className="flex-container"
+    >
+      <div
+        className="flex-1"
+      >
+        <a
+          aria-current={null}
+          href="/all-posts"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+            id="group-all-posts"
+          >
+            All Posts
+          </div>
+        </a>
+        <a
+          aria-current={null}
+          href="/group/1"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+          >
+            Algebra 1
+          </div>
+        </a>
+        <a
+          aria-current={null}
+          href="/group/2"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+          >
+            Geometry
+          </div>
+        </a>
+        <a
+          aria-current={null}
+          href="/group/3"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+          >
+            Algebra 2
+          </div>
+        </a>
+        <a
+          aria-current={null}
+          href="/group/4"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+          >
+            Intro to Data Science
+          </div>
+        </a>
+        <a
+          href="/add-post"
+          onClick={[Function]}
+        >
+          <div
+            className="group-card"
+            id="group-add-post"
+          >
+             + Add a Post
+          </div>
+        </a>
+      </div>
+      <div
+        className="flex-3"
+      >
+        <section>
+          <a
+            href="/post/cbc787a0-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Corporis accusamus placeat quas non voluptas. Harum fugit molestias qui. Velit ex animi reiciendis q
+                ...
+              </p>
+              <p>
+                Posted by 
+                Christine Yoo
+                 on
+                 
+                2019-01-03
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e0034-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Eos laudantium quia ab blanditiis temporibus necessitatibus. Culpa et voluptas ut sed commodi. 
+                ...
+              </p>
+              <p>
+                Posted by 
+                Nick Dequina
+                 on
+                 
+                2018-08-15
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e01a6-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Occaecati dignissimos quam qui facere deserunt quia. Quaerat aut eos laudantium dolor odio officiis 
+                ...
+              </p>
+              <p>
+                Posted by 
+                Esther Ishii
+                 on
+                 
+                2018-03-01
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e0570-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Eum culpa odit. Veniam porro molestiae dolores sunt reiciendis culpa. Atque accusamus dolore eos odi
+                ...
+              </p>
+              <p>
+                Posted by 
+                David Gavrilovic
+                 on
+                 
+                2019-01-04
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e0714-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Distinctio dolor nihil ad iure quo tempore id ipsum. Doloremque sunt dicta odit. Id veritatis aut et
+                ...
+              </p>
+              <p>
+                Posted by 
+                Destiny Tadena
+                 on
+                 
+                2018-07-12
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e0854-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Aliquid magnam ut quis quas impedit molestiae laudantium adipisci et. Officiis ut dolor rerum molest
+                ...
+              </p>
+              <p>
+                Posted by 
+                Christine Yoo
+                 on
+                 
+                2018-08-20
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e0980-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Eaque aliquid sit. Ducimus consequatur nam. Corporis ut dolorum amet molestiae minima ut quasi nesci
+                ...
+              </p>
+              <p>
+                Posted by 
+                James Le
+                 on
+                 
+                2018-03-03
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e0aac-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Expedita mollitia et. Voluptates optio expedita. Esse ullam numquam quae rem. Cum esse itaque et.
+                ...
+              </p>
+              <p>
+                Posted by 
+                Christine Yoo
+                 on
+                 
+                2018-05-16
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e0bce-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Rem enim voluptatem autem fuga possimus. Perferendis voluptatem labore vero veritatis laborum aspern
+                ...
+              </p>
+              <p>
+                Posted by 
+                Christine Yoo
+                 on
+                 
+                2018-04-11
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e0f48-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Occaecati qui magni blanditiis. Et animi quas. Harum quo dolore quia nam amet numquam. Omnis et ex.
+                ...
+              </p>
+              <p>
+                Posted by 
+                Jake Nguyen
+                 on
+                 
+                2018-04-26
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e1074-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Tenetur deleniti vero. Qui et sit voluptatem et dolor voluptas. Aut adipisci autem dolorem ad except
+                ...
+              </p>
+              <p>
+                Posted by 
+                Alfred Cardenas
+                 on
+                 
+                2018-02-05
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e11a0-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Tempore aliquam nobis amet dolor laborum aspernatur aspernatur. Non porro est mollitia nobis. Evenie
+                ...
+              </p>
+              <p>
+                Posted by 
+                Chuck Rah
+                 on
+                 
+                2018-12-01
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e12c2-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Fugiat dolores et nostrum laborum id delectus sint reiciendis. Recusandae nulla repellendus. Labore
+                ...
+              </p>
+              <p>
+                Posted by 
+                Anna Saad
+                 on
+                 
+                2018-09-11
+              </p>
+            </div>
+          </a>
+        </section>
+        <section>
+          <a
+            href="/post/d26e1452-ffaf-11e8-8eb2-f2801f1b9fd1"
+            onClick={[Function]}
+          >
+            <div
+              className="post"
+            >
+              <h1
+                className="post-title"
+              />
+              <p>
+                Team:
+                 
+                <strong>
+                  Intro to Data Science
+                </strong>
+              </p>
+              <p>
+                Veritatis porro minima perspiciatis. Repellat veniam quo iste ut. Iusto voluptas quae quibusdam.
+                ...
+              </p>
+              <p>
+                Posted by 
+                Teresa Dyson
+                 on
+                 
+                2018-08-13
+              </p>
+            </div>
+          </a>
+        </section>
+      </div>
+    </div>
+  </div>,
+  <footer
+    className="footer-style"
+  >
+    <div
+      className="container"
+    >
+      <h4
+        id="footer-h4-hh"
+      >
+        Copyright © 2021 Christine Yoo
+      </h4>
+      <ul
+        id="footer-menu"
+      >
+        <li>
+          <i
+            className="fab fa-linkedin-in"
+          />
+          <a
+            href="https://www.linkedin.com/in/christine-yoo-cy/"
+            rel="noreferrer"
+            target="_blank"
+          >
+             LinkedIn
+          </a>
+        </li>
+        <li>
+          <i
+            className="fab fa-github"
+          />
+          <a
+            href="https://github.com/christineyoo"
+            rel="noreferrer"
+            target="_blank"
+          >
+             GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>,
+]
+`;

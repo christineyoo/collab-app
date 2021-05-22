@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
 import HomeButton from '../../Organisms/HomeButton/HomeButton';
@@ -58,4 +59,4 @@ class PostDetails extends Component {
   }
 }
 
-export default PostDetails;
+export default withRouter(PostDetails);

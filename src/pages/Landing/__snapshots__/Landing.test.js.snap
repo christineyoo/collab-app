@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Landing UI as expected 1`] = `
+Array [
+  <header
+    className="landing"
+    id="landing-header"
+  >
+    <h1
+      id="landing-h1"
+    >
+      Collaborate better.
+    </h1>
+    <h2
+      id="landing-h2"
+    >
+      Collab is a productivity app that helps teachers increase their efficacy by enabling intra- and inter-collaboration amongst course teams.
+    </h2>
+    <a
+      href="/all-posts"
+      onClick={[Function]}
+    >
+      <button
+        id="landing-button"
+      >
+        Explore Collab
+      </button>
+    </a>
+  </header>,
+  <section
+    className="landing-section"
+    id="benefits"
+  >
+    <h3
+      id="landing-h3"
+    >
+      <i>
+        Benefits of Collab
+      </i>
+    </h3>
+    <div
+      className="flex"
+    >
+      <div
+        className="flex-1"
+        id="landing-card"
+      >
+        <i
+          className="far fa-comments fa-7x"
+        />
+        <h4>
+          Easy to use
+        </h4>
+        <p>
+          Get updates from your department without the hassle of digging through your inbox (no offense, email).
+        </p>
+      </div>
+      <div
+        className="flex-1"
+        id="landing-card"
+      >
+        <i
+          className="fas fa-users fa-7x"
+        />
+        <h4>
+          Stay connected
+        </h4>
+        <p>
+          Keep tabs on your colleagues to provide feedback, track progress, share best practices.
+        </p>
+      </div>
+      <div
+        className="flex-1"
+        id="landing-card"
+      >
+        <i
+          className="fas fa-arrows-alt-v fa-7x"
+        />
+        <h4>
+          Vertical alignment
+        </h4>
+        <p>
+          Find resources, updates in curriculum, and assessments for every course in one place.
+        </p>
+      </div>
+    </div>
+  </section>,
+  <section
+    className="landing-section"
+    id="features"
+  >
+    <h3
+      id="landing-h3"
+    >
+      <i>
+        Features of Collab
+      </i>
+    </h3>
+    <div
+      className="flex"
+    >
+      <div
+        className="flex-1"
+        id="landing-card"
+      >
+        <h4>
+          Simple interface
+        </h4>
+        <p>
+          Skip the searching and scrolling through that inbox. All the info you need is here. Simply click on the course you would like to view and see all the relevant updates from your colleagues.
+        </p>
+      </div>
+      <div
+        className="flex-1"
+      >
+        <img
+          alt="groups"
+          className="responsive"
+          src="collab-groups.png"
+        />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div
+      className="flex"
+    >
+      <div
+        className="flex-1"
+      >
+        <img
+          alt="groups"
+          className="responsive"
+          src="collab-edit.png"
+        />
+      </div>
+      <div
+        className="flex-1"
+        id="landing-card"
+      >
+        <h4>
+          Edit with ease
+        </h4>
+        <p>
+          Made a typo in your message? Sent a message to the wrong group? No worries. Edit your posts to how you want them with just a few clicks.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div
+      className="flex"
+    >
+      <div
+        className="flex-1"
+        id="landing-card"
+      >
+        <h4>
+          Keep track of conversations
+        </h4>
+        <p>
+          All relevant comments regarding a post are kept in their respective posts so that you can respond in an easy, streamlined format. No more wondering if you clicked 'Reply All' or just 'Reply'!
+        </p>
+      </div>
+      <div
+        className="flex-1"
+      >
+        <img
+          alt="groups"
+          className="responsive"
+          src="collab-comment.png"
+        />
+      </div>
+    </div>
+  </section>,
+  <footer
+    className="footer-style"
+  >
+    <div
+      className="container"
+    >
+      <h4
+        id="footer-h4-hh"
+      >
+        Copyright © 2021 Christine Yoo
+      </h4>
+      <ul
+        id="footer-menu"
+      >
+        <li>
+          <i
+            className="fab fa-linkedin-in"
+          />
+          <a
+            href="https://www.linkedin.com/in/christine-yoo-cy/"
+            rel="noreferrer"
+            target="_blank"
+          >
+             LinkedIn
+          </a>
+        </li>
+        <li>
+          <i
+            className="fab fa-github"
+          />
+          <a
+            href="https://github.com/christineyoo"
+            rel="noreferrer"
+            target="_blank"
+          >
+             GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>,
+]
+`;

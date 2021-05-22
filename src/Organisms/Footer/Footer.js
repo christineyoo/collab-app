@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './Footer.css';
 
 class Footer extends Component {
   render() {
     return (
-      <>
+      <Router>
         <footer className='footer-style'>
           <div className='container'>
             <h4 id='footer-h4-hh'>Copyright &copy; 2021 Christine Yoo</h4>
@@ -32,7 +33,7 @@ class Footer extends Component {
             </ul>
           </div>
         </footer>
-      </>
+      </Router>
     );
   }
 }

@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import HomeButton from '../../Organisms/HomeButton/HomeButton';
 import FindGroupName from '../../Molecules/FindGroupName/FindGroupName';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Group.css';
 import Posts from '../../Organisms/Posts/Posts.js';
+import PropTypes from 'prop-types';
 import SideBar from '../../Organisms/SideBar/SideBar.js';
 
 class Group extends Component {
+  static propTypes = {
+    match: PropTypes.object
+  };
   render() {
     return (
       <>
-      <HomeButton />
+        <HomeButton />
         <div id='group-bg'>
           <header className='group'>
             <h1>
@@ -18,8 +23,8 @@ class Group extends Component {
             </h1>
             <h2>
               Viewing posts from{' '}
-              <FindGroupName group_id={this.props.match.params.groupId} />
-              {' '}teachers
+              <FindGroupName group_id={this.props.match.params.groupId} />{' '}
+              teachers
             </h2>
           </header>
           <div className='flex-container'>
@@ -38,4 +43,4 @@ class Group extends Component {
   }
 }
 
-export default Group;
+export default withRouter(Group);

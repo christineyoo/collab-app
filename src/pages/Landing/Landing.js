@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Footer from '../../Organisms/Footer/Footer.js';
 import './Landing.css';
 import featurePicture1 from '../../images/collab-groups.png';
@@ -17,11 +17,7 @@ class Landing extends Component {
     } else {
       return (
         <div className='flex-1'>
-          <img
-            src={featurePicture2}
-            alt='edit'
-            className='responsive'
-          />
+          <img src={featurePicture2} alt='edit' className='responsive' />
         </div>
       );
     }
@@ -88,21 +84,22 @@ class Landing extends Component {
               </p>
             </div>
             <div className='flex-1'>
-          <img src={featurePicture1} alt='groups' className='responsive' />
-        </div>
+              <img src={featurePicture1} alt='groups' className='responsive' />
+            </div>
           </div>
           <br />
           <br />
           <br />
           <div className='flex'>
-          <div className='flex-1'>
-          <img src={featurePicture2} alt='groups' className='responsive' />
-        </div>
+            <div className='flex-1'>
+              <img src={featurePicture2} alt='groups' className='responsive' />
+            </div>
             <div id='landing-card' className='flex-1'>
               <h4>Edit with ease</h4>
               <p>
                 Made a typo in your message? Sent a message to the wrong group?
-                No worries. Edit your posts to how you want them with just a few clicks.
+                No worries. Edit your posts to how you want them with just a few
+                clicks.
               </p>
             </div>
           </div>
@@ -120,8 +117,8 @@ class Landing extends Component {
               </p>
             </div>
             <div className='flex-1'>
-          <img src={featurePicture3} alt='groups' className='responsive' />
-        </div>
+              <img src={featurePicture3} alt='groups' className='responsive' />
+            </div>
           </div>
         </section>
         <Footer />

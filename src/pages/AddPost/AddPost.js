@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './AddPost.css';
 import ApiContext from '../../ApiContext.js';
 import Footer from '../../Organisms/Footer/Footer.js';
@@ -94,7 +94,7 @@ class AddPost extends Component {
   renderOptions = () => {
     const copyGroups = this.context.groups || [];
     const groupOptions = copyGroups.map((group, i) => {
-      return <option value={i + 1}>{group.group_name}</option>;
+      return <option key={i} value={i + 1}>{group.group_name}</option>;
     });
     return groupOptions;
   };
@@ -143,7 +143,7 @@ class AddPost extends Component {
     return (
       <ApiContext.Consumer>
         {(context) => (
-          <>
+          <Router>
             <HomeButton />
             <div id='add-post-bg'>
               <Link to={'/all-posts'}>
@@ -219,7 +219,7 @@ class AddPost extends Component {
               </div>
             </div>
             <Footer />
-          </>
+          </Router>
         )}
       </ApiContext.Consumer>
     );

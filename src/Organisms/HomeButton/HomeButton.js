@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './HomeButton.css';
 
 class HomeButton extends Component {
   render() {
     return (
-      <nav>
+      <Router><nav>
         <Link id='nav' exact to='/'>
           Collab
         </Link>
-      </nav>
+      </nav></Router>
+      
     );
   }
 }

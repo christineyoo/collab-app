@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders NotFound UI as expected 1`] = `
+<h1>
+  Sorry, the page you are looking for is not here... :(
+</h1>
+`;
