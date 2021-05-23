@@ -2,7 +2,7 @@
 ## Description
 Collab is a productivity app that helps teachers increase their efficacy by enabling intra- and inter-collaboration amongst course teams. In a general sense, Collab could be used for members of teams within a larger enterprise working towards a common goal.
 
-Users are able to read all posts or access a particular post, create a post, edit a post, and delete a post. Users are also able to view, hide, add, and delete a comment. Collab encourages teachers/teammates to communicate in an organized way and also promotes efficiency by allowing teachers/teammates to stay connected.
+Users are able to read all posts or access a particular post, create a post, edit a post, and delete a post. Users are also able to view, hide, add, and delete a comment for a post. Collab encourages teachers/teammates to communicate in an organized way and also promotes efficiency by allowing them to stay connected.
 
 [Link to live app](https://collab-app-smoky.vercel.app/)
 
