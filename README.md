@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Collab
+## Description
+Collab is a productivity app that helps teachers increase their efficacy by enabling intra- and inter-collaboration amongst course teams. In a general sense, Collab could be used for members of teams within a larger enterprise working towards a common goal.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Users are able to read all posts or access a particular post, create a post, edit a post, and delete a post. Users are also able to view, hide, add, and delete a comment. Collab encourages teachers/teammates to communicate in an organized way and also promotes efficiency by allowing teachers/teammates to stay connected.
 
-## Available Scripts
+[Link to live app](https://collab-app-smoky.vercel.app/)
 
-In the project directory, you can run:
+## Features
+### Simple interface
+- Skip the searching and scrolling through that inbox. All the info you need is here. Simply click on the course you would like to view and see all the relevant updates from your colleagues.
+![image](https://user-images.githubusercontent.com/76637034/119248754-34095b80-bb48-11eb-8dd9-db8855e9f6bf.png)
 
-### `npm start`
+### Edit with ease
+- Made a typo in your message? Sent a message to the wrong group? No worries. Edit your posts to how you want them with just a few clicks.
+![image](https://user-images.githubusercontent.com/76637034/119248787-61560980-bb48-11eb-8a83-996aac255288.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Keep track of conversations
+- All relevant comments regarding a post are kept in their respective posts so that you can respond in an easy, streamlined format. No more wondering if you clicked 'Reply All' or just 'Reply'!
+![image](https://user-images.githubusercontent.com/76637034/119248799-7d59ab00-bb48-11eb-9324-006ec01511a0.png)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies used
+- ReactJS
+- Testing with Jest
+- JavaScript
+- HTML5
+- CSS3
+- Vercel
+- [Click here to visit the server side](https://github.com/christineyoo/collab-server)
