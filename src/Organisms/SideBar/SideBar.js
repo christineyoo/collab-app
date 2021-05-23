@@ -16,7 +16,7 @@ class SideBar extends Component {
           to={`/group/${group.id}`}
           activeStyle={{
             fontStyle: 'bold',
-            color: '#b13c47',
+            color: '#245149',
             fontWeight: '900'
           }}
         >
@@ -36,7 +36,7 @@ class SideBar extends Component {
           to={'/all-posts'}
           activeStyle={{
             fontStyle: 'bold',
-            color: '#b13c47',
+            color: '#245149',
             fontWeight: '900'
           }}
         >

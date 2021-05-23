@@ -7,7 +7,14 @@ class HomeButton extends Component {
     return (
       <>
         <nav>
-          <Link id='nav' exact to='/'>
+          <Link
+            style={{
+              fontFamily: 'Abril Fatface, cursive'
+            }}
+            id='nav'
+            exact
+            to='/'
+          >
             Collab
           </Link>
         </nav>
