@@ -31,7 +31,7 @@ class AddComment extends Component {
     const commentContent = content.value;
     const commentPostId = this.props.post_id;
     const commentAuthor = 'User';
-    fetch('http://localhost:8000/api/comments', {
+    fetch('https://christine-collab.herokuapp.com/api/comments', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

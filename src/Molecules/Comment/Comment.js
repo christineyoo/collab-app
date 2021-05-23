@@ -12,7 +12,7 @@ class Comment extends Component {
   static contextType = ApiContext;
 
   deleteCommentRequest = (commentId, deleteCommentCb) => {
-    fetch(`http://localhost:8000/api/comments/${commentId}`, {
+    fetch(`https://christine-collab.herokuapp.com/api/comments/${commentId}`, {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json'
