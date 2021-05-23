@@ -8,7 +8,7 @@ Users are able to read all posts or access a particular post, create a post, edi
 
 ## Features
 ### Simple interface
-- Skip the searching and scrolling through that inbox. All the info you need is here. Simply click on the course you would like to view and see all the relevant updates from your colleagues.
+- Skip the searching and scrolling through that email inbox. All the info you need is here. Simply click on the course you would like to view and see all the relevant updates from your colleagues.
 ![image](https://user-images.githubusercontent.com/76637034/119248754-34095b80-bb48-11eb-8dd9-db8855e9f6bf.png)
 
 ### Edit with ease
@@ -18,6 +18,8 @@ Users are able to read all posts or access a particular post, create a post, edi
 
 ### Keep track of conversations
 - All relevant comments regarding a post are kept in their respective posts so that you can respond in an easy, streamlined format. No more wondering if you clicked 'Reply All' or just 'Reply'!
+
+
 ![image](https://user-images.githubusercontent.com/76637034/119248799-7d59ab00-bb48-11eb-9324-006ec01511a0.png)
 
 ## Technologies used
