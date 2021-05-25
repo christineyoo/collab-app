@@ -133,4 +133,8 @@ i {
   #landing-h3 {
     padding: 2% 0;
   }
+
+  #landing-card {
+    padding: 6rem 2rem;
+  }
 }
