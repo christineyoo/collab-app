@@ -39,7 +39,7 @@ class AddComment extends Component {
       body: JSON.stringify({
         content: commentContent,
         author: commentAuthor,
-        modified: '2023-05-20 23:21:26.392487+00',
+        modified: new Date().toISOString(),
         post_id: commentPostId
       })
     })
