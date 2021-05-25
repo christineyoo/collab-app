@@ -120,6 +120,10 @@ class Landing extends Component {
               <img src={featurePicture3} alt='groups' className='responsive' />
             </div>
           </div>
+          <br />
+          <Link to='all-posts'>
+            <button id='landing-button'>Explore Collab</button>
+          </Link>
         </section>
         <Footer />
       </>
