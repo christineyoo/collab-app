@@ -161,22 +161,20 @@ class App extends Component {
     return (
       <>
         <main className='App'>
-          <header>
-            <ApiContext.Provider value={contextValue}>
-              <ScrollToTop />
-              <CollabError>
-                <Switch>
-                  <Route exact path='/all-posts' component={AllPosts} />
-                  <Route exact path='/add-post' component={AddPost} />
-                  <Route path='/group/:groupId' component={Group} />
-                  <Route path='/post/:postId/edit' component={EditPost} />
-                  <Route path='/post/:postId' component={PostDetails} />
-                  <Route exact path='/' component={Landing} />
-                  <Route component={NotFound} />
-                </Switch>
-              </CollabError>
-            </ApiContext.Provider>
-          </header>
+          <ApiContext.Provider value={contextValue}>
+            <ScrollToTop />
+            <CollabError>
+              <Switch>
+                <Route exact path='/all-posts' component={AllPosts} />
+                <Route exact path='/add-post' component={AddPost} />
+                <Route path='/group/:groupId' component={Group} />
+                <Route path='/post/:postId/edit' component={EditPost} />
+                <Route path='/post/:postId' component={PostDetails} />
+                <Route exact path='/' component={Landing} />
+                <Route component={NotFound} />
+              </Switch>
+            </CollabError>
+          </ApiContext.Provider>
         </main>
       </>
     );
