@@ -109,7 +109,7 @@ class EditPost extends Component {
     const postGroup = group.value;
     const postAuthor = author.value;
     const postModified = '2021-05-20 23:21:26.392487+00';
-    fetch(`https://christine-collab.herokuapp.com/api/posts/${postId}`, {
+    fetch(`${process.env.REACT_APP_HEROKU_URL}/api/posts/${postId}`, {
       method: 'PATCH',
       headers: {
         'content-type': 'application/json'

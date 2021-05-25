@@ -21,7 +21,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch('https://christine-collab.herokuapp.com/api/groups', {
+    fetch(`${process.env.REACT_APP_HEROKU_URL}/api/groups`, {
       method: 'GET',
       headers: {
         'content-type': 'application/json'
@@ -40,7 +40,7 @@ class App extends Component {
   }
 
   fetchPosts = () => {
-    fetch('https://christine-collab.herokuapp.com/api/posts', {
+    fetch(`${process.env.REACT_APP_HEROKU_URL}/api/posts`, {
       method: 'GET',
       headers: {
         'content-type': 'application/json'
@@ -59,7 +59,7 @@ class App extends Component {
   };
 
   fetchComments = () => {
-    fetch('https://christine-collab.herokuapp.com/api/comments', {
+    fetch(`${process.env.REACT_APP_HEROKU_URL}/api/comments`, {
       method: 'GET',
       headers: {
         'content-type': 'application/json'

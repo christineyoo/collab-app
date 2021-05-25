@@ -18,7 +18,7 @@ class Post extends Component {
   };
 
   deletePostRequest = (postId, deletePostCb) => {
-    fetch(`https://christine-collab.herokuapp.com/api/posts/${postId}`, {
+    fetch(`${process.env.REACT_APP_HEROKU_URL}/api/posts/${postId}`, {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json'
