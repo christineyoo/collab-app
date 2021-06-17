@@ -8,6 +8,11 @@ Array [
       href="/"
       id="nav"
       onClick={[Function]}
+      style={
+        Object {
+          "fontFamily": "Abril Fatface, cursive",
+        }
+      }
     >
       Collab
     </a>
