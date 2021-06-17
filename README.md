@@ -29,4 +29,6 @@ Users are able to read all posts or access a particular post, create a post, edi
 - HTML5
 - CSS3
 - Vercel
+- Adobe Illustrator
+- GIMP
 - [Click here to visit the server side](https://github.com/christineyoo/collab-server)
